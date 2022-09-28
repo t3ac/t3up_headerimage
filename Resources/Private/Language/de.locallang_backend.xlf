@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3up_headerimage">
+		<header/>
+		<body>
+			
+			/* -- BACKENDLAYOUTS ------------------------- */
+			<trans-unit id="tab.title">
+			     <source>h_da - Elements</source>
+			     <target state="translated">h_da - Elemente</target>
+		    </trans-unit>
+			<trans-unit id="headerimage.title">
+			     <source>Headerimage</source>
+			     <target state="translated">Kopfbild</target>
+		    </trans-unit>
+			<trans-unit id="headerimage.description">
+			     <source>Big headerimage for the media area</source>
+			     <target state="translated">Großes Kopfbild für Bereich Media</target>
+		    </trans-unit>	
+			<trans-unit id="headerimage.header">
+			     <source>Header (not vissible)</source>
+			      <target state="translated">Überschrift, nicht sichtbar</target>
+		    </trans-unit>	    
+			<trans-unit id="headerimage.image">
+			     <source>Headerimage</source>
+			     <target state="translated">Headerimage</target>
+		    </trans-unit>	
+			<trans-unit id="headerimage.flexvalues">
+			     <source>Control</source>
+			      <target state="translated">Einstellungen</target>
+		    </trans-unit>		
+		    
+		    /* -- DESIGN ------------------------- */
+			<trans-unit id="display">
+			     <source>Headerimage variations</source>
+			     <target state="translated">Anzeigearten</target>
+		    </trans-unit>		    
+			<trans-unit id="simple">
+			     <source>Simple Headerimage</source>
+			     <target state="translated">Einfaches Kopfbild</target>
+		    </trans-unit>
+			<trans-unit id="dynmaic">
+			     <source>Headerimage with JavaScript-function</source>
+			     <target state="translated">Kopfbild mit JavaScript-Funktion</target>
+		    </trans-unit>
+			<trans-unit id="blur">
+			     <source>Headerimage with blur-effect</source>
+			     <target state="translated">Kopfbild mit Weichzeicheneffekt</target>
+		    </trans-unit>	    
+			<trans-unit id="color">
+			     <source>Headerimage with background-color</source>
+			     <target state="translated">Kopfbild mit Hintergrundfarbe</target>
+		    </trans-unit>	     
+			<trans-unit id="wide">
+			     <source>Headerimage no limit</source>
+			     <target state="translated">Breites Kopfbild</target>
+		    </trans-unit>	
+			<trans-unit id="wideoverlay">
+			     <source>Headerimage no limit, with overlay</source>
+			     <target state="translated">Breites Kopfbild mit transparenter Farbfläche</target>
+		    </trans-unit>	  	  
+			<trans-unit id="overlay">
+			     <source>Image with an overlay</source>
+			     <target state="translated">Bild mit transparenter Farbfläche</target>
+		    </trans-unit>	
+			<trans-unit id="text">
+			     <source>with Text</source>
+			     <target state="translated">Mit seitlichem Text</target>
+		    </trans-unit>	
+			<trans-unit id="headeropacity">
+			     <source>Transparenz (%) der Farbfläche</source>
+		    </trans-unit>		
+			<trans-unit id="headerimagebg">
+			     <source>Background-color/overlay-color</source>
+			     <target state="translated">Hintergrund-/Überlagungsfarbe</target>
+		    </trans-unit>	
+		    
+			<trans-unit id="headerimageheight">
+			     <source>Max-height of the headerimageframe (default 60vH)</source>
+			     <target state="translated">Maximale Höhe des Kopfbildrahmens (Vorgabe 60vH)</target>
+		    </trans-unit>
+			<trans-unit id="headerimageminheight">
+			     <source>Min-height of the headerimageframe</source>
+			     <target state="translated">Minimale Höhe des Kopfbildrahmens (200px)</target>
+		    </trans-unit>
+			<trans-unit id="title">
+			     <source>Show the title/subtitle</source>
+			     <target state="translated">Anzeige des Titels/Untertitels</target>
+		    </trans-unit>	
+			<trans-unit id="imageinf">
+			     <source>Image-Copyright</source>
+			     <target state="translated">Copyright anzeigen</target>
+		    </trans-unit>	
+			<trans-unit id="yes">
+			     <source>Yes</source>
+			     <target state="translated">Ja</target>
+		    </trans-unit>
+			<trans-unit id="no">
+			     <source>No</source>
+			     <target state="translated">Nein</target>
+		    </trans-unit>
+		    
+		</body>
+	</file>
+</xliff>

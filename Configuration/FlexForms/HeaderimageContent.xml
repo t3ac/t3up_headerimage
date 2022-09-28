@@ -1,0 +1,144 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Function</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                	<display>
+ 						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:display</label>
+                             	<config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:simple</numIndex>
+		                                <numIndex index="1">A</numIndex>   
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:blur</numIndex>
+		                                <numIndex index="1">C</numIndex>   
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:color</numIndex>
+		                                <numIndex index="1">D</numIndex>                               
+                                   </numIndex>  
+                                    <numIndex index="4" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:overlay</numIndex>
+		                                <numIndex index="1">E</numIndex>                               
+                                   </numIndex> 
+                                    <numIndex index="5" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wide</numIndex>
+		                                <numIndex index="1">F</numIndex>                               
+                                   </numIndex>  
+                                     <numIndex index="6" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:text</numIndex>
+		                                <numIndex index="1">G</numIndex>                               
+                                   </numIndex> 
+                                     <numIndex index="7" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wideoverlay</numIndex>
+		                                <numIndex index="1">H</numIndex>                               
+                                   </numIndex> 
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </display>
+                  	<title>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:title</label>
+							<config>
+								<type>select</type>
+                                <renderType>selectSingle</renderType>								
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:no</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:yes</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+                        </TCEforms>
+                	</title>  
+                	<headerimagebg>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimagebg</label>
+                             <config type="array">
+                                <type>input</type> 
+								<size>10</size> 
+								<renderType>colorpicker</renderType> 
+								<default>#555555</default> 
+                            </config>
+                        </TCEforms>
+                	</headerimagebg> 
+                	<headeropacity>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headeropacity</label>
+                             <config type="array">
+                                <type>input</type> 
+								<size>10</size> 
+								<range>
+									<lower>0</lower>
+									<upper>100</upper>
+								</range>
+								<slider>
+									<step>1</step>
+									<width>200</width>	
+								</slider>
+								<default>50</default> 
+								<eval>trim,int</eval> 
+                            </config>
+                        </TCEforms>
+                	</headeropacity> 
+                	<imageheight>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimageheight</label>
+					        <config>
+					            <type>input</type>
+					            <size>3</size>
+					            <default>100</default>
+					            <eval>int</eval>
+					            <range>
+					                <lower>1</lower>
+					                <upper>100</upper>
+					            </range>
+					            <wizards>
+					                <slider>
+					                    <type>slider</type>
+					                    <step>1</step>
+					                </slider>
+					            </wizards>
+					            <default>60</default>
+					        </config>
+                        </TCEforms>
+                	</imageheight>  
+                	<imageinf>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:imageinf</label>
+							<config>
+								<type>select</type>
+                                <renderType>selectSingle</renderType>								
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:no</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:yes</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+                        </TCEforms>
+                	</imageinf>  
+                	      	
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3up_headerimage">
+		<header/>
+		<body>
+			
+			/* -- BACKENDLAYOUTS ------------------------- */
+			<trans-unit id="tab.title">
+			     <source>h_da - Elements</source>
+		    </trans-unit>
+			<trans-unit id="tab.headerConfig">
+			     <source>Configuration</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.title">
+			     <source>Headerimage</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.description">
+			     <source>Big headerimage for the media area</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.header">
+			     <source>Header (not vissible)</source>
+		    </trans-unit>	    
+			<trans-unit id="headerimage.image">
+			     <source>Headerimage</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.flexvalues">
+			     <source>Control</source>
+		    </trans-unit>		    
+
+		  
+		    
+			/* -- DESIGN ------------------------- */	    
+			<trans-unit id="display">
+			     <source>Headerimage variations</source>
+		    </trans-unit>		    
+			<trans-unit id="simple">
+			     <source>Simple Headerimage</source>
+		    </trans-unit>
+			<trans-unit id="dynamic">
+			     <source>Headerimage with JavaScript-function</source>
+		    </trans-unit>
+			<trans-unit id="blur">
+			     <source>Headerimage with blur-effect</source>
+		    </trans-unit>	    
+			<trans-unit id="color">
+			     <source>Headerimage with background-color</source>
+		    </trans-unit>	     
+			<trans-unit id="wide">
+			     <source>Headerimage no limit</source>
+		    </trans-unit>	  
+			<trans-unit id="wideoverlaywideoverlay">
+			     <source>Headerimage no limit, with overlay</source>
+		    </trans-unit>	  
+			<trans-unit id="headerimagebg">
+			     <source>Background-color/overlay-color</source>
+		    </trans-unit>	
+			<trans-unit id="text">
+			     <source>with Text</source>
+		    </trans-unit>	    
+			<trans-unit id="overlay">
+			     <source>Image with an overlay</source>
+		    </trans-unit>	
+			<trans-unit id="headeropacity">
+			     <source>Opacity (%) of the overlay-color</source>
+		    </trans-unit>			    	    
+			<trans-unit id="headerimageheight">
+			     <source>Max-height of the headerimageframe (default 60vH)</source>
+		    </trans-unit>
+			<trans-unit id="headerimageminheight">
+			     <source>Min-height of the headerimageframe (200px)</source>
+		    </trans-unit>
+			
+			<trans-unit id="title">
+			     <source>Show the title/subtitle</source>
+		    </trans-unit>	
+			<trans-unit id="imageinf">
+			     <source>Image-Copyright</source>
+		    </trans-unit>	
+			<trans-unit id="yes">
+			     <source>Yes</source>
+		    </trans-unit>
+			<trans-unit id="no">
+			     <source>No</source>
+		    </trans-unit>
+			
+			
+		</body>
+	</file>
+</xliff>

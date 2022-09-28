@@ -1,0 +1,31 @@
+{
+  "name": "t3ac/t3up-headerimage",
+  "type": "typo3-cms-extension",
+  "description": "T3UP - Headerimage",
+  "authors": [
+    {
+      "name": "Michael Lang",
+      "role": "Developer",
+      "email": "michael.lang@h-da.de"
+    }
+  ],
+  "license": ["GPL-2.0-or-later"],
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "t3up"
+  ],
+  "require": {
+    "typo3/cms-core": "^10.4 || ^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3up\\T3upHeaderimage\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t3up_headerimage"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+lib.contentElement {
+	templateRootPaths {
+		111 						= EXT:t3up_headerimage/Resources/Private/Templates
+	}
+}
+ 
+tt_content {
+	headerimage_content < lib.contentElement
+	headerimage_content {
+		templateName = Headerimage
+		dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+                as = image
+            }
+            20 = T3up\T3upHeaderimage\DataProcessing\FlexFormProcessor
+            20 {
+                if.isTrue.field = pi_flexform
+                fieldName = pi_flexform
+                as = settings 
+            }
+		}
+	}
+}
+
+page.includeCSS{
+   	t3up_headerimage                                = {$page.scss.scssT3upHeaderimage}
+    t3up_headerimage.linenumber                     = true    
+}

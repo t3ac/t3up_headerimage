@@ -1,0 +1,49 @@
+/** Headerimage *****************************************************************************************************************/   
+
+  span.inf                                          {cursor: pointer; position: absolute; top:10px; left: 10px; color: #fff; font-size: 150%;;}
+  span.inf > p                                      {cursor: normal; background: rgba($baseColor, .7); font-family: $font; display: none; padding: 5px; font-size: 1rem;}
+  span.inf:hover > p                                {display: block;}
+  
+  
+  .headerimage                                      {overflow: hidden; min-height: 30px; width: 100%; position: relative;}
+  
+  .headerimage img									{min-width: 100%;}			
+  
+ 
+  .headerimagetitle                                 {position: absolute; z-index: 2; width: 100%; text-align: left; color: #fff; bottom: 0; padding:1rem;}
+  .headerimagetitle h2                              {margin-bottom: 30px;}  
+  .headerimagetitle *                               {color: #fff;}  
+
+  /* A - Single */
+  .headerimage picture                              {width: 100%;}
+  .headerimage .control                             {transition: all ease .3s; position: absolute; z-index: 2; top: 0; right: 0;}
+  .headerimage .control > *                         {display: block; font-family: FontAwesome; cursor: pointer; color: #fff; font-size: 2em; padding-left: 15px; padding-right: 15px;  }
+  .headerimage .control .showMedia                  {display: none; color: #666;}
+  .headerimage:hover .control .hideMedia            {background: rgba($baseColor, .7);}
+
+  /* B - JS */
+  .headerimage.sliding                              {background: linear-gradient(to bottom, rgba(0,0,0,.05) 0%, rgba(255,255,255,0) 100%)}
+
+  /* C - Blur */
+ .headerimageblur                                   {width: 100%; position: relative; overflow: hidden; }
+ .headerimageblur .blur                             {width: 100%; position: relative; z-index: 1;  }
+ .headerimageblur .blur > img                       {margin-top: -1%; width: calc(110% + 30px); max-width: calc(110% + 30px); height: auto; filter: blur(5px) grayscale(40%); margin-left: -15px;}
+ .headerimageblur .base                             {position: relative;}
+
+ .headerimageblur .containerblur                    {position: absolute; top: 0; left: 0; width: 100%; z-index: 2;}
+ .headerimageblur .containerblur picture            {width: 100%;}
+ .headerimageblur .containerblur img                {width: 100%; height: auto;}
+
+ /* D - BG-Color */
+ /* .headerimagebg                                    {overflow: hidden; width: 100%;}*/
+  
+ /* E - Overlay */
+  .overlayHeaderImage                               {position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; }
+
+ /* G - Text */
+
+  .headerimageframeBG                               {width: 100%; display: block;}
+  .headerimageframeBG > .container                  {padding-top: 40px; padding-bottom: 40px; border-top: 2px solid #fff;}
+  .headerimageframeBG .cont                         {padding-left: 30px;}  
+  .headerimageframeBG h3                            {color: #fff; font-weight: 700; letter-spacing: 0.1px;margin-bottom: 1rem;line-height: 1.2em;font-size: 1.5em; }
+  .headerimageframeBG p                             {color: #fff; font-size: 1em; font-weight: 600;}

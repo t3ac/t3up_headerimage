@@ -1,0 +1,5 @@
+page.scss {
+      # cat =t3up: scss/t3upextensions/201;  type =string; label =T3UP - Headerimage: - Scss
+      scssT3upHeaderimage = EXT:t3up_headerimage/Resources/Public/Sass/_t3upHeaderimage.scss
+}
+
