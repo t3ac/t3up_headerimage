@@ -8,30 +8,12 @@ declare(strict_types = 1);
  * LICENSE file that was distributed with this source code.
  */
 
-namespace T3up\T3upHeaderimage\DataProcessing;
+namespace T3ac\T3upHeaderimage\DataProcessing;
 
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
-
-/**
-* dataProcessing {
-*            
-*          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-*           10 {
-*                references.fieldName = image
-*                as = image
-*            }
-*            
-*            20 = T3up\T3upImageslider\DataProcessing\FlexFormProcessor
-*            20 {
-*                if.isTrue.field = pi_flexform
-*                fieldName = pi_flexform
-*                as = settings
-*            }
-*        }
-*/
 
 class FlexFormProcessor implements DataProcessorInterface
 {
