@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "T3up\\T3upHeaderimage\\": "Classes"
+      "T3ac\\T3upHeaderimage\\": "Classes"
     }
   },
   "extra": {
