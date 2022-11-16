@@ -76,9 +76,14 @@
 		    </trans-unit>	
 		    
 			<trans-unit id="headerimageheight">
-			     <source>Max-height of the headerimageframe (default 60vH)</source>
-			     <target state="translated">Maximale Höhe des Kopfbildrahmens (Vorgabe 60vH)</target>
+			     <source>Min-height of the headerimageframe</source>
+			     <target state="translated">Minimale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
 		    </trans-unit>
+			<trans-unit id="headermaximageheight">
+			     <source>Max-height of the headerimageframe</source>
+			     <target state="translated">Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
+		    </trans-unit>
+		    
 			<trans-unit id="headerimageminheight">
 			     <source>Min-height of the headerimageframe</source>
 			     <target state="translated">Minimale Höhe des Kopfbildrahmens (200px)</target>

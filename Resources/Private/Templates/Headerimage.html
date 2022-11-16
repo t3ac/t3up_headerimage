@@ -4,14 +4,14 @@
     <f:switch expression="{settings.display}">
     
         <f:case value="A">
-		    <div class="container p-0 headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" style="max-height:{settings.imageheight}vH;">
-
+		    <div class="container p-0 headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
+		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
 	            <f:for each="{image}" as="image"> 
 	                <f:render section="picture" arguments="{_all}"/>
 	            </f:for>
 
 	        	<f:if condition="{settings.title}">	
-			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}; opacity: calc({settings.headeropacity} / 100);" >
+			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
 		      			<span class="h3 m-0">{data.header}</span>	
 						<f:if condition="{data.subheader}">
 							<p class="m-0">{data.subheader}</p>	
@@ -21,9 +21,11 @@
 		    </div>     
 	   </f:case>    
 	       
+		<f:comment>  Fluid Value  {f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight/3*2}px')}</f:comment>
 
 	    <f:case value="C">
-		    <div class="headerimageblur p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" style="max-height:{settings.imageheight}vH;">
+		    <div class="headerimageblur p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
+		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
 	            <f:for each="{image}" as="image"> 
 	                <picture class="blur">
 						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
@@ -43,19 +45,18 @@
                      		
 	                    <img src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default'"  />
 	                </picture>   
-	                <div class="containerblur">
-						<div class="container p-0">
-							<div class="row"> 
-					                <f:render section="picture" arguments="{_all}"/>
-							</div>
+		            <div class="blurImageContainer w-100" >    
+						<div class="container p-0 blurImage">
+					        <f:render section="picture" arguments="{_all}"/>
 						</div>  
-	                </div> 
+	                </div>  
 	            </f:for>
 	        </div>         	            
 	   </f:case> 
 	   
 	    <f:case value="D">
-		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"  style="max-height:{settings.imageheight}vH;   background-color: {settings.headerimagebg}; {f:if(condition: '{settings.imageminheight}', then: 'min-height:{settings.imageminheight}vH', else: 'min-height:200px')}">
+		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
+		     	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
 			     <div class="container p-0">
 		            <f:for each="{image}" as="image"> 
 		                <f:render section="picture" arguments="{_all}"/>  
@@ -65,7 +66,8 @@
 	   </f:case> 
 	   
         <f:case value="E">
-		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0"  style="max-height:{settings.imageheight}vH;">
+		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0"
+		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
 		        <div class="overlayHeaderImage w-100" style="background-color: {settings.headerimagebg}; opacity: calc({settings.headeropacity} / 100) "></div> 
 	            <f:for each="{image}" as="image"> 
 	                <f:render section="picture" arguments="{_all}"/> 
@@ -74,26 +76,27 @@
 	   </f:case>   
 	   
  	    <f:case value="F">
-		    <div class="headerimage w-100"  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} style="max-height:{settings.imageheight}vH;">
-		            <f:for each="{image}" as="image"> 
-		                <f:render section="picture" arguments="{_all}"/>
-		            </f:for>
-		        </div>         	        
+		    <div class="headerimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
+		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+	            <f:for each="{image}" as="image"> 
+	                <f:render section="picture" arguments="{_all}"/>
+		        </f:for>      	        
 		    </div>    
 	   </f:case> 
 	   
         <f:case value="G">
 	    	<div class="headerimageframeBG">    
-			    <div class="container p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
-			        <div class="row headerimage" style="background-color: {settings.headerimagebg}; max-height:{settings.imageheight}vH;">
+			    <div class="container p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
+			    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+			        <div class="row headerimage" style="background-color: {settings.headerimagebg}; min-height:{settings.imageheight}px;">
 			            <div class="col-12 col-md-9 px-0 mb-3 mb-md-0">
 			            	<f:for each="{image}" as="image"> 
 				                <f:render section="picture" arguments="{_all}"/>
 			            	</f:for>
 			            </div>	
-			            <div class="col-12 col-md-3 py-3 cont">		            
-							<span class="h3">{data.header}</span>	
-							<p>{data.subheader}</p>	
+			            <div class="col-12 col-md-3 p-5 cont">		            
+							<span class="h3 mb-2">{data.header}</span>	
+							<span class="p"><br />{data.subheader}</span>	
 			            </div>		            	            	
 			        </div>             
 			    </div> 
@@ -101,7 +104,8 @@
 	   </f:case>
 	   
 		<f:case value="H">
-		    <div class="headerimageframe  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" style="max-height:{settings.imageheight}vH;">
+		    <div class="headerimageframe  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
+		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
 		        <div class="headerimage">
 					<div class="overlayHeaderImage" style="background-color: {settings.headerimagebg}; opacity: calc({settings.headeropacity} / 100); z-index:1;"></div> 
 
@@ -111,13 +115,9 @@
 		            
 		        </div>         	        
 		    </div>    
-	   </f:case> 
-	   
-	   
-	   
+	   </f:case>    
 	</f:switch>
-	
-	
+
 	<f:section name="picture">
         <picture class="w-100">
 			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">

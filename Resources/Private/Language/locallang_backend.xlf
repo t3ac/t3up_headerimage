@@ -64,10 +64,10 @@
 			     <source>Opacity (%) of the overlay-color</source>
 		    </trans-unit>			    	    
 			<trans-unit id="headerimageheight">
-			     <source>Max-height of the headerimageframe (default 60vH)</source>
+			     <source>Min-height of the headerimageframe</source>
 		    </trans-unit>
-			<trans-unit id="headerimageminheight">
-			     <source>Min-height of the headerimageframe (200px)</source>
+			<trans-unit id="headermaximageheight">
+			     <source>Max-height of the headerimageframe</source>
 		    </trans-unit>
 			
 			<trans-unit id="title">
