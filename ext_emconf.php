@@ -8,7 +8,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'T3UP - Headerimage',
     'description'      => 'Headerimage as a content element',
-    'version'          => '10.0.0',
+    'version'          => '11.0.01',
     'state'            => 'stable',
     'category'         => 'fe',
     'author'           => 'Michael Lang',
@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearcacheonload' => false,
     'constraints'      => [
         'depends'   => [
-            'typo3' => '10.4.0-11.5.99',
+            'typo3' => '11.5.0-',
         ],
         'conflicts' => [],
         'suggests'  => [],

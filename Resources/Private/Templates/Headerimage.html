@@ -1,18 +1,19 @@
  <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
      xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
+
     <f:switch expression="{settings.display}">
-    
+
         <f:case value="A">
-		    <div class="container p-0 headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
-		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+		    <div class="container pb-3 p-xl-0 headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
+		    	style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
 	            <f:for each="{image}" as="image"> 
 	                <f:render section="picture" arguments="{_all}"/>
 	            </f:for>
 
 	        	<f:if condition="{settings.title}">	
 			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
-		      			<span class="h3 m-0">{data.header}</span>	
+		      			<span class="{settings.titlesize} m-0">{data.header}</span>	
 						<f:if condition="{data.subheader}">
 							<p class="m-0">{data.subheader}</p>	
 						</f:if>
@@ -21,32 +22,62 @@
 		    </div>     
 	   </f:case>    
 	       
-		<f:comment>  Fluid Value  {f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight/3*2}px')}</f:comment>
+		<f:comment>  Fluid Value  {f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px')}</f:comment>
 
 	    <f:case value="C">
-		    <div class="headerimageblur p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
-		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+		    <div class="headerimageblur pb-3 p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
+		    	 style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
+		    	 
+		    	<f:if condition="{settings.title}">	
+			    	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+				     	<div class="container">
+			      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+							<f:if condition="{data.subheader}">
+								<p class="m-0">{data.subheader}</p>	
+							</f:if>
+				      	</div>   
+			      	 </div>   
+	      		</f:if>
+		    
+		    
 	            <f:for each="{image}" as="image"> 
-	                <picture class="blur">
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
+				    <picture class="blur">
+						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
 			            
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
 			            
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
 			                   	
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
 			               
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
-			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
-                     		
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
+			                     	
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/webp"> 
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/jpeg">
+			                 
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/webp"> 
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/jpeg">
+			               
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/webp">    
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/jpeg"> 
+			            
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/webp">    
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/jpeg">             
+			                        	
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/webp">	
+			            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/jpeg">	   
+	                
+		
 	                    <img src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default'"  />
+	                    
 	                </picture>   
-		            <div class="blurImageContainer w-100" >    
-						<div class="container p-0 blurImage">
+		            <div class="blurImageContainer w-100"  style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
+						<div class="container pb-3 p-xl-0 blurImage">
 					        <f:render section="picture" arguments="{_all}"/>
 						</div>  
 	                </div>  
@@ -55,48 +86,69 @@
 	   </f:case> 
 	   
 	    <f:case value="D">
-		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
-		     	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
-			     <div class="container p-0">
-		            <f:for each="{image}" as="image"> 
-		                <f:render section="picture" arguments="{_all}"/>  
-		            </f:for>
-		        </div>         	        
-		    </div>    
+		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{settings.display}">
+				     <div class="container pb-3 p-xl-0" style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
+			            <f:for each="{image}" as="image"> 
+			                <f:render section="picture" arguments="{_all}"/>  
+			            </f:for>
+			            <f:if condition="{settings.title}">	
+					     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+				      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+								<f:if condition="{data.subheader}">
+									<p class="m-0">{data.subheader}</p>	
+								</f:if>
+					      	</div>
+		      			</f:if>					      	
+			        </div>    
+		    	<div class="headerimagebg w-100" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity}; z-index: -1;" > </div> 
+		    </div>     
 	   </f:case> 
 	   
         <f:case value="E">
-		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0"
-		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
-		        <div class="overlayHeaderImage w-100" style="background-color: {settings.headerimagebg}; opacity: calc({settings.headeropacity} / 100) "></div> 
+		    <div class="headerimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0 headerimagetyle{settings.display}" >
+		        <div class="overlayHeaderImage w-100" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};"></div> 
 	            <f:for each="{image}" as="image"> 
 	                <f:render section="picture" arguments="{_all}"/> 
-	            </f:for>    
+	            </f:for>
+	            <f:if condition="{settings.title}">	
+			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+		      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+						<f:if condition="{data.subheader}">
+							<p class="m-0">{data.subheader}</p>	
+						</f:if>
+			      	</div>
+      			</f:if>
 		    </div>     
 	   </f:case>   
 	   
  	    <f:case value="F">
-		    <div class="headerimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"
-		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+		    <div class="headerimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{settings.display}" >
 	            <f:for each="{image}" as="image"> 
 	                <f:render section="picture" arguments="{_all}"/>
-		        </f:for>      	        
+		        </f:for>     
+	            <f:if condition="{settings.title}">	
+			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+		      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+						<f:if condition="{data.subheader}">
+							<p class="m-0">{data.subheader}</p>	
+						</f:if>
+			      	</div>
+      			</f:if>		         	        
 		    </div>    
 	   </f:case> 
 	   
         <f:case value="G">
 	    	<div class="headerimageframeBG">    
-			    <div class="container p-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
-			    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
-			        <div class="row headerimage" style="background-color: {settings.headerimagebg}; min-height:{settings.imageheight}px;">
-			            <div class="col-12 col-md-9 px-0 mb-3 mb-md-0">
+			    <div class="container pb-3 p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"  >			    
+			        <div class="row headerimage m-0" style="background-color: {settings.headerimagebg};" style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
+			            <div class="col-12 col-md-9 px-0 mb-3 mb-md-0" >		            
 			            	<f:for each="{image}" as="image"> 
 				                <f:render section="picture" arguments="{_all}"/>
 			            	</f:for>
 			            </div>	
-			            <div class="col-12 col-md-3 p-5 cont">		            
+			            <div class="col-12 col-md-3 p-3 p-md-4 plg-5 cont">		            
 							<span class="h3 mb-2">{data.header}</span>	
-							<span class="p"><br />{data.subheader}</span>	
+							{f:if(condition: data.subheader, then: '<span class="p"><br />{data.subheader}</span>')}
 			            </div>		            	            	
 			        </div>             
 			    </div> 
@@ -104,60 +156,91 @@
 	   </f:case>
 	   
 		<f:case value="H">
-		    <div class="headerimageframe  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" 
-		    	 style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')}{f:if(condition: settings.maximageheight, then: 'max-height:{settings.maximageheight}px;')}"  >
+		    <div class="headerimageframe  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{settings.display}"" >
 		        <div class="headerimage">
-					<div class="overlayHeaderImage" style="background-color: {settings.headerimagebg}; opacity: calc({settings.headeropacity} / 100); z-index:1;"></div> 
+					<div class="overlayHeaderImage" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity}; z-index:1;"></div> 
 
 		            <f:for each="{image}" as="image"> 
 		                <f:render section="picture" arguments="{_all}"/>  
 		            </f:for>    
 		            
+		            <f:if condition="{settings.title}">	
+				     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+			      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+							<f:if condition="{data.subheader}">
+								<p class="m-0">{data.subheader}</p>	
+							</f:if>
+				      	</div>
+	      			</f:if>	
+      			
 		        </div>         	        
 		    </div>    
 	   </f:case>    
+	   
+ 	    <f:case value="I">
+		    <div class="headerimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{settings.display}" >
+	            <f:for each="{image}" as="image"> 
+	                <f:render section="picture" arguments="{_all}"/>
+		        </f:for>     
+	            <f:if condition="{settings.title}">	
+			     	<div class="headerimagetitle" style="background-color: {settings.headerimagebg}{settings.headeropacity}{settings.headeropacity};" >
+		      			<span class="{settings.titlesize} m-0">{data.header}</span>	
+						<f:if condition="{data.subheader}">
+							<p class="m-0">{data.subheader}</p>	
+						</f:if>
+			      	</div>
+      			</f:if>		         	        
+		    </div>    
+	   </f:case>
+	   
 	</f:switch>
 
 	<f:section name="picture">
-        <picture class="w-100">
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
+        <picture>
+			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
             
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
             
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
                    	
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
                
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
                      	
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '992')}"   media="(min-width: 769px)" type="image/webp"> 
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '992')}"   media="(min-width: 769px)" type="image/jpeg">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/webp"> 
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/jpeg">
                  
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '768')}"   media="(min-width: 641px)" type="image/webp"> 
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '768')}"   media="(min-width: 641px)" type="image/jpeg">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/webp"> 
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/jpeg">
                
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '640')}"   media="(min-width: 361px)" type="image/webp">    
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '640')}"   media="(min-width: 361px)" type="image/jpeg"> 
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/webp">    
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/jpeg"> 
+            
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/webp">    
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/jpeg">             
                         	
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '360')}"  type="image/webp">	
-            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '360')}"  type="image/jpeg">	   
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/webp">	
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/jpeg">	   
                    
-            <img class="w-100" src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', maxWidth: '{data.imagewidth}')}"
-                {f:if(condition: '{dimensions.height}', then: 'height="{dimensions.height}"')}            
-                {f:if(condition: '{dimensions.width}', then: 'width="{dimensions.width}"')}
+            <img class="w-100" role="Presentation"
+            	src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
+                {f:if(condition: '{image.properties.height}', then: 'height="{image.properties.height}"')}            
+                {f:if(condition: '{image.properties.width}', then: 'width="{image.properties.width}"')}
 	            {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
-	            {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
 	            {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
-                role="presentation"  loading="lazy" />
+                {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
+	            style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')} {f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px;')}" />
 
             <f:if condition="{settings.imageinf}" >
                 <span class="inf symbol">&#xF05a;
-					<p>copyright: {image.properties.copyright}</p>
+					<p>copyright:<br /> 
+					<f:format.nl2br>{image.properties.copyright}</f:format.nl2br>
+					</p>
 				</span> 
 			</f:if>
         </picture>

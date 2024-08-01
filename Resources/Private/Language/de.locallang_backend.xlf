@@ -39,10 +39,6 @@
 			     <source>Simple Headerimage</source>
 			     <target state="translated">Einfaches Kopfbild</target>
 		    </trans-unit>
-			<trans-unit id="dynmaic">
-			     <source>Headerimage with JavaScript-function</source>
-			     <target state="translated">Kopfbild mit JavaScript-Funktion</target>
-		    </trans-unit>
 			<trans-unit id="blur">
 			     <source>Headerimage with blur-effect</source>
 			     <target state="translated">Kopfbild mit Weichzeicheneffekt</target>
@@ -65,36 +61,12 @@
 		    </trans-unit>	
 			<trans-unit id="text">
 			     <source>with Text</source>
-			     <target state="translated">Mit seitlichem Text</target>
-		    </trans-unit>	
-			<trans-unit id="headeropacity">
-			     <source>Transparenz (%) der Farbfläche</source>
-		    </trans-unit>		
-			<trans-unit id="headerimagebg">
-			     <source>Background-color/overlay-color</source>
-			     <target state="translated">Hintergrund-/Überlagungsfarbe</target>
+			     <target state="translated">Mit seitlichem Titel- und Subtiteltext</target>
 		    </trans-unit>	
 		    
-			<trans-unit id="headerimageheight">
-			     <source>Min-height of the headerimageframe</source>
-			     <target state="translated">Minimale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
-		    </trans-unit>
-			<trans-unit id="headermaximageheight">
-			     <source>Max-height of the headerimageframe</source>
-			     <target state="translated">Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
-		    </trans-unit>
-		    
-			<trans-unit id="headerimageminheight">
-			     <source>Min-height of the headerimageframe</source>
-			     <target state="translated">Minimale Höhe des Kopfbildrahmens (200px)</target>
-		    </trans-unit>
 			<trans-unit id="title">
 			     <source>Show the title/subtitle</source>
 			     <target state="translated">Anzeige des Titels/Untertitels</target>
-		    </trans-unit>	
-			<trans-unit id="imageinf">
-			     <source>Image-Copyright</source>
-			     <target state="translated">Copyright anzeigen</target>
 		    </trans-unit>	
 			<trans-unit id="yes">
 			     <source>Yes</source>
@@ -104,7 +76,44 @@
 			     <source>No</source>
 			     <target state="translated">Nein</target>
 		    </trans-unit>
+		    		    
+			<trans-unit id="titlesize">
+			     <source>Size of the title</source>
+			     <target state="translated">Gr��e der �berschrift</target>
+		    </trans-unit>		
+			<trans-unit id="size1">
+			     <source>h1</source>
+		    </trans-unit>		
+			<trans-unit id="size2">
+			     <source>h2</source>
+		    </trans-unit>		
+			<trans-unit id="size3">
+			     <source>h3</source>
+		    </trans-unit>		
+			<trans-unit id="size4">
+			     <source>h4</source>
+		    </trans-unit>			    
 		    
+			<trans-unit id="headerimagebg">
+			     <source>Background-color/overlay-color</source>
+			     <target state="translated">Hintergrund-/Überlagungsfarbe</target>
+		    </trans-unit>			    
+			<trans-unit id="headeropacity">
+			     <source>Transparenz (%) der Farbfläche</source>
+		    </trans-unit>		
+			<trans-unit id="imageminheight">
+			     <source>Min-height of the headerimageframe</source>
+			     <target state="translated">Minimale Höhe des Kopfbildrahmens (200px)</target>
+		    </trans-unit>
+			<trans-unit id="imagemaxheight">
+			     <source>Max-height of the headerimageframe</source>
+			     <target state="translated">Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
+		    </trans-unit>
+
+			<trans-unit id="imageinf">
+			     <source>Image-Copyright</source>
+			     <target state="translated">Copyright anzeigen</target>
+		    </trans-unit>	
 		</body>
 	</file>
 </xliff>

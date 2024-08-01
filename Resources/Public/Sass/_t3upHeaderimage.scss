@@ -1,42 +1,64 @@
 /** Headerimage *****************************************************************************************************************/   
 
-  span.inf                                          {cursor: pointer; position: absolute; top:10px; left: 10px; color: #fff; font-size: 150%;;}
-  span.inf > p                                      {cursor: normal; background: rgba($baseColor, .7); font-family: $font; display: none; padding: 5px; font-size: 1rem;}
-  span.inf:hover > p                                {display: block;}
-  
-  
-  .headerimage                                      {overflow: hidden; min-height: 30px; width: 100%; position: relative;}
-  
-  .headerimage img									{min-width: 100%;}			
-  
+span.inf                                            {cursor: pointer; position: absolute; top:10px; left: 10px; color: #fff; font-size: 150%;z-index: 11;}
+span.inf > p                                        {cursor: text; background: rgba($baseColor, .7); font-family: $font; display: none; padding: 5px; font-size: 1rem;}
+span.inf:hover > p                               	  {display: block;}
+
+.headerimage  picture img                           {object-fit: cover;}
+
+.headerimage                                        {overflow: hidden; min-height: 30px; width: 100%; position: relative;}
+
+.headerimage img								   	  {min-width: 100%;}			
+
+.headerimagetitle                                   {position: absolute; z-index: 2; width: 100%; text-align: left; color: #fff; bottom: 0; padding:1rem; }
+.headerimagetitle h2                                {margin-bottom: 30px;}  
+.headerimagetitle *                                 {color: #fff;}  
+
+/* A - Single */
+.headerimage picture                                {width: 100%;}
+
+/* C - Blur */
+.headerimageblur                                    {overflow: hidden; position: relative}
+.headerimageblur .blur img                          {z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center 0; filter: blur(5px) grayscale(40%); }
  
-  .headerimagetitle                                 {position: absolute; z-index: 2; width: 100%; text-align: left; color: #fff; bottom: 0; padding:1rem;}
-  .headerimagetitle h2                              {margin-bottom: 30px;}  
-  .headerimagetitle *                               {color: #fff;}  
+.headerimageblur .blurImageContainer                {position: absolute; left: 0; top: 0; height: 100%; }
+.headerimageblur .blurImageContainer .blurImage     {height: 100%; overflow: hidden;  }
+.headerimageblur .blurImageContainer .blurImage img {width: 100%; height: 100%; object-fit: cover; object-position: center 0; }
 
-  /* A - Single */
-  .headerimage picture                              {width: 100%;}
-  .headerimage .control                             {transition: all ease .3s; position: absolute; z-index: 2; top: 0; right: 0;}
-  .headerimage .control > *                         {display: block; font-family: FontAwesome; cursor: pointer; color: #fff; font-size: 2em; padding-left: 15px; padding-right: 15px;  }
-  .headerimage .control .showMedia                  {display: none; color: #666;}
-  .headerimage:hover .control .hideMedia            {background: rgba($baseColor, .7);}
+/* D - BG-Color */
+.headerimagetyleD{
+  .headerimagebg                                  {position: absolute; left: 0; top: 0; height: 100%; }
+  .headerimagetitle                               {max-width: $container;}
+}
 
-  /* C - Blur */
-  .headerimageblur                                   {overflow: hidden; position: relative}
-  .headerimageblur .blur img                         {z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center 0; filter: blur(5px) grayscale(40%); }
-  
-  .headerimageblur .blurImageContainer               {position: absolute; left: 0; top: 0; height: 100%; }
-  .headerimageblur .blurImageContainer .blurImage    {height: 100%; overflow: hidden;  }
-  .headerimageblur .blurImageContainer .blurImage img {width: 100%; height: 100%; object-fit: cover; object-position: center 0; }
+/* E - Overlay */
+.headerimagetyleE{
+  .overlayHeaderImage                              {position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; }
+  .headerimagetitle                                {z-index: 20;}
+}
 
- /* D - BG-Color */
- /* .headerimagebg                                    {overflow: hidden; width: 100%;}*/
-  
- /* E - Overlay */
-  .overlayHeaderImage                               {position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; }
+/* F - Overlay */
+.headerimagetyleF{
+  span                                             {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important; text-align: left; }
+}
 
- /* G - Text */
+/* G - Text */
 
-  .headerimageframeBG                               {width: 100%; display: block;}
-  .headerimageframeBG .h3                           {color: #fff; font-weight: 600; letter-spacing: 0.1px;margin-bottom: 1rem;line-height: 1.2em;font-size: 1.5em; display: inline-block;}
-  .headerimageframeBG .p                            {color: #fff; font-size: 1em; font-weight: 500;}
+.headerimageframeBG                                 {width: 100%; display: block;}
+.headerimageframeBG .h3                             {color: #fff; font-weight: 600; letter-spacing: 0.1px;margin-bottom: 1rem;line-height: 1.2em;font-size: 1.5em; display: inline-block;}
+.headerimageframeBG .p                              {color: #fff; font-size: 1em; font-weight: 500;}
+
+ /* H - Overlay */
+.headerimagetyleH{
+  .overlayHeaderImage                              {position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; }
+  span                                             {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important; text-align: left; }
+}
+
+
+ /* H - Overlay */
+.headerimagetyleI{
+  picture img:after                              {position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; height: 300px; bottom: 0;background-color: red;}
+}
+
+ .headerimagetyleI:after                          {content:'';position: absolute; width: 100%; height: 100%; z-index: 11; left: 0; height: 300px; bottom: 0; background-repeat: no-repeat; background-position: center bottom;
+                                                  background-size: 100% auto; background-image: url(../../../typo3conf/ext/t3up_headerimage/Resources/Public/Design/arrow.png);}

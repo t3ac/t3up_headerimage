@@ -5,13 +5,13 @@ lib.contentElement {
 }
  
 tt_content {
-	headerimage_content < lib.contentElement
-	headerimage_content {
+	t3upheaderimage_content < lib.contentElement
+	t3upheaderimage_content {
 		templateName = Headerimage
 		dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
-                references.fieldName = image
+                references.fieldName = assets
                 as = image
             }
             20 = T3ac\T3upHeaderimage\DataProcessing\FlexFormProcessor

@@ -34,14 +34,18 @@
 		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wide</numIndex>
 		                                <numIndex index="1">F</numIndex>                               
                                    </numIndex>  
-                                     <numIndex index="6" type="array">
+                                   <numIndex index="6" type="array">
 		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:text</numIndex>
 		                                <numIndex index="1">G</numIndex>                               
                                    </numIndex> 
-                                     <numIndex index="7" type="array">
+                                   <numIndex index="7" type="array">
 		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wideoverlay</numIndex>
 		                                <numIndex index="1">H</numIndex>                               
-                                   </numIndex> 
+                                   </numIndex>
+                                    <numIndex index="8" type="array">
+		                       			<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:spezial</numIndex>
+		                                <numIndex index="1">I</numIndex>                               
+                                   </numIndex>
                                 </items>
                             </config>
                         </TCEforms>
@@ -65,6 +69,34 @@
 							</config>
                         </TCEforms>
                 	</title>  
+                  	<titlesize>
+  						<TCEforms type="array">
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:titlesize</label>
+							<config>
+								<type>select</type>
+                                <renderType>selectSingle</renderType>								
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size1</numIndex>
+										<numIndex index="1">h1</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size2</numIndex>
+										<numIndex index="1">h2</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size3</numIndex>
+										<numIndex index="1">h3</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size4</numIndex>
+										<numIndex index="1">h4</numIndex>
+									</numIndex>
+								</items>
+								<default>h3</default> 
+							</config>
+                        </TCEforms>
+                	</titlesize>  
                 	<headerimagebg>
   						<TCEforms type="array">
                             <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimagebg</label>
@@ -84,81 +116,77 @@
 		                        <renderType>selectSingle</renderType>
 		                        <items type="array">
 		                            <numIndex index="1" type="array">
-		                                <numIndex index="0">0% transparent</numIndex>
+		                                <numIndex index="0">transparent</numIndex>
 		                                <numIndex index="1">0</numIndex>
 		                            </numIndex>
 		                            <numIndex index="2" type="array">
-		                                <numIndex index="0">1</numIndex>
+		                                <numIndex index="0">6,6%</numIndex>
 		                                <numIndex index="1">1</numIndex>
 		                            </numIndex>
 		                            <numIndex index="3" type="array">
-		                                <numIndex index="0">2</numIndex>
+		                                <numIndex index="0">13,3%</numIndex>
 		                                <numIndex index="1">2</numIndex>
 		                            </numIndex>
 		                            <numIndex index="4" type="array">
-		                                <numIndex index="0">3</numIndex>
+		                                <numIndex index="0">20%</numIndex>
 		                                <numIndex index="1">3</numIndex>
 		                            </numIndex>
 		                            <numIndex index="5" type="array">
-		                                <numIndex index="0">25%</numIndex>
+		                                <numIndex index="0">26.6%</numIndex>
 		                                <numIndex index="1">4</numIndex>
 		                            </numIndex>
 		                            <numIndex index="6" type="array">
-		                                <numIndex index="0">5</numIndex>
+		                                <numIndex index="0">33,3%</numIndex>
 		                                <numIndex index="1">5</numIndex>
 		                            </numIndex> 
 		                            <numIndex index="7" type="array">
-		                                <numIndex index="0">6</numIndex>
+		                                <numIndex index="0">40%</numIndex>
 		                                <numIndex index="1">6</numIndex>
 		                            </numIndex>
 		                            <numIndex index="8" type="array">
-		                                <numIndex index="0">7</numIndex>
+		                                <numIndex index="0">46,6%</numIndex>
 		                                <numIndex index="1">7</numIndex>
 		                            </numIndex>
 		                            <numIndex index="9" type="array">
-		                                <numIndex index="0">50%</numIndex>
+		                                <numIndex index="0">53,3%</numIndex>
 		                                <numIndex index="1">8</numIndex>
 		                            </numIndex>
 		                            <numIndex index="10" type="array">
-		                                <numIndex index="0">9</numIndex>
+		                                <numIndex index="0">60%</numIndex>
 		                                <numIndex index="1">9</numIndex>
 		                            </numIndex>
 		                            <numIndex index="11" type="array">
-		                                <numIndex index="0">10</numIndex>
+		                                <numIndex index="0">66.6%</numIndex>
 		                                <numIndex index="1">a</numIndex>
 		                            </numIndex>
 		                            <numIndex index="12" type="array">
-		                                <numIndex index="0">11 - 75%</numIndex>
+		                                <numIndex index="0">73,3%</numIndex>
 		                                <numIndex index="1">b</numIndex>
 		                            </numIndex>
 		                            <numIndex index="13" type="array">
-		                                <numIndex index="0">12</numIndex>
+		                                <numIndex index="0">80%</numIndex>
 		                                <numIndex index="1">c</numIndex>
 		                            </numIndex>                          
 		                            <numIndex index="14" type="array">
-		                                <numIndex index="0">13</numIndex>
+		                                <numIndex index="0">86,6%</numIndex>
 		                                <numIndex index="1">d</numIndex>
 		                            </numIndex>
 		                            <numIndex index="15" type="array">
-		                                <numIndex index="0">14</numIndex>
+		                                <numIndex index="0">93,3%</numIndex>
 		                                <numIndex index="1">e</numIndex>
 		                            </numIndex>
 		                            <numIndex index="16" type="array">
-		                                <numIndex index="0">100% transparent</numIndex>
+		                                <numIndex index="0">100% - opak</numIndex>
 		                                <numIndex index="1">f</numIndex>
-		                            </numIndex>    
-		                            <numIndex index="17" type="array">
-		                                <numIndex index="0">ohne</numIndex>
-		                                <numIndex index="1">-</numIndex>
-		                            </numIndex>                                           
+		                            </numIndex>                                               
 		                        </items>
 		                        <default>b</default>
                    			</config> 
                         </TCEforms>
                 	</headeropacity> 
-                	<imageheight>
+                	<imageminheight>
   						<TCEforms type="array">
-                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimageheight</label>
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:imageminheight</label>
 					        <config>
 					            <type>input</type>
 					            <size>3</size>
@@ -177,14 +205,14 @@
 					            <default></default>
 					        </config>
                         </TCEforms>
-                	</imageheight> 
-                	<maximageheight>
+                	</imageminheight> 
+                	<imagemaxheight>
   						<TCEforms type="array">
-                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headermaximageheight</label>
+                            <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:imagemaxheight</label>
 					        <config>
 					            <type>input</type>
 					            <size>3</size>
-					            <default>100</default>
+					            <default>240</default>
 					            <eval>int</eval>
 					            <range>
 					                <lower>0</lower>
@@ -199,7 +227,7 @@
 					            <default></default>
 					        </config>
                         </TCEforms>
-                	</maximageheight> 
+                	</imagemaxheight> 
                 	<imageinf>
   						<TCEforms type="array">
                             <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:imageinf</label>

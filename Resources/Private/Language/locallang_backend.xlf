@@ -30,14 +30,12 @@
 		  
 		    
 			/* -- DESIGN ------------------------- */	    
+			
 			<trans-unit id="display">
 			     <source>Headerimage variations</source>
 		    </trans-unit>		    
 			<trans-unit id="simple">
 			     <source>Simple Headerimage</source>
-		    </trans-unit>
-			<trans-unit id="dynamic">
-			     <source>Headerimage with JavaScript-function</source>
 		    </trans-unit>
 			<trans-unit id="blur">
 			     <source>Headerimage with blur-effect</source>
@@ -48,42 +46,63 @@
 			<trans-unit id="wide">
 			     <source>Headerimage no limit</source>
 		    </trans-unit>	  
-			<trans-unit id="wideoverlaywideoverlay">
+			<trans-unit id="wideoverlay">
 			     <source>Headerimage no limit, with overlay</source>
 		    </trans-unit>	  
-			<trans-unit id="headerimagebg">
-			     <source>Background-color/overlay-color</source>
-		    </trans-unit>	
+			<trans-unit id="spezial">
+			     <source>Special</source>
+		    </trans-unit>			    
 			<trans-unit id="text">
-			     <source>with Text</source>
-		    </trans-unit>	    
-			<trans-unit id="overlay">
-			     <source>Image with an overlay</source>
+			     <source>with the titletext and subtitletext on the right</source>
+		    </trans-unit>  
+		    
+			<trans-unit id="titlesize">
+			     <source>Size of the title</source>
+		    </trans-unit>		
+			<trans-unit id="size1">
+			     <source>h1</source>
+		    </trans-unit>		
+			<trans-unit id="size2">
+			     <source>h2</source>
+		    </trans-unit>		
+			<trans-unit id="size3">
+			     <source>h3</source>
+		    </trans-unit>		
+			<trans-unit id="size4">
+			     <source>h4</source>
 		    </trans-unit>	
-			<trans-unit id="headeropacity">
-			     <source>Opacity (%) of the overlay-color</source>
-		    </trans-unit>			    	    
-			<trans-unit id="headerimageheight">
-			     <source>Min-height of the headerimageframe</source>
-		    </trans-unit>
-			<trans-unit id="headermaximageheight">
-			     <source>Max-height of the headerimageframe</source>
-		    </trans-unit>
-			
+		    
 			<trans-unit id="title">
 			     <source>Show the title/subtitle</source>
-		    </trans-unit>	
-			<trans-unit id="imageinf">
-			     <source>Image-Copyright</source>
-		    </trans-unit>	
+			</trans-unit>     
 			<trans-unit id="yes">
 			     <source>Yes</source>
 		    </trans-unit>
 			<trans-unit id="no">
 			     <source>No</source>
 		    </trans-unit>
-			
-			
+		    
+			<trans-unit id="imageminheight">
+			     <source>Min-height of the headerimageframe</source>
+		    </trans-unit>
+			<trans-unit id="imagemaxheight">
+			     <source>Max-height of the headerimageframe</source>
+		    </trans-unit>
+
+			<trans-unit id="headerimagebg">
+			     <source>Background-color, overlay-color</source>
+		    </trans-unit>  
+			<trans-unit id="headeropacity">
+			     <source>Opacity (in percent) of the overlay-color</source>
+		    </trans-unit>
+
+
+
+
+			<trans-unit id="overlay">
+			     <source>Image with an overlay</source>
+		    </trans-unit>	
+		    
 		</body>
 	</file>
 </xliff>

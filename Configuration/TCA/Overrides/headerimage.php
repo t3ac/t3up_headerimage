@@ -5,7 +5,7 @@ defined('TYPO3_MODE') or die();
 /***************
  * Assign Icon
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['image'] = 't3up_headerimage';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['t3upheaderimage_content'] = 't3upheaderimage_content';
 
 call_user_func(function () {
     
@@ -16,16 +16,16 @@ call_user_func(function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
-        ['Headerimage', 'headerimage_content', 't3up_headerimage']
+        ['Headerimage', 't3upheaderimage_content', 't3upheaderimage_content']
     );
 
     // Define what fields to display
-    $GLOBALS['TCA']['tt_content']['types']['headerimage_content'] = [
+    $GLOBALS['TCA']['tt_content']['types']['t3upheaderimage_content'] = [
         'showitem' => '
             --palette--;    
                 ' . $frontendLanguageFilePrefix . 'palette.general;general,  
                  header,header_link,subheader,
-                 image, 
+                 assets, 
 		    --div--;LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimage.flexvalues, pi_flexform,
 		    --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 		    --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,space_after_class,
@@ -36,15 +36,10 @@ call_user_func(function () {
 		      
         ',
         'columnsOverrides' => [
-            'image' => [
+            'assets' => [
                 'config' => [
                     'maxitems' => '1',
                     'minitems' => '1'
-                ]
-            ],
-            'header' => [
-                'config' => [
-                    'eval' => 'required'
                 ]
             ],
         ]
@@ -54,7 +49,7 @@ call_user_func(function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
         '*',
         'FILE:EXT:t3up_headerimage/Configuration/FlexForms/HeaderimageContent.xml',
-        'headerimage_content'
+        't3upheaderimage_content'
     );
 
 });

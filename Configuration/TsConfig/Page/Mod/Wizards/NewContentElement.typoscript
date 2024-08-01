@@ -1,11 +1,11 @@
 mod.wizards.newContentElement.wizardItems {
     common.elements {
         headerimage {
-            iconIdentifier = t3up_headerimage
+            iconIdentifier = t3upheaderimage_content
             title = LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimage.title
             description = LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimage.description
             tt_content_defValues {
-                CType = headerimage_content
+                CType = t3upheaderimage_content
             }
         }  
     }
