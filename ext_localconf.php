@@ -1,27 +1,22 @@
 <?php
 
-/*
- * This file is part of the composer package t3ac/t3up_headerimage.
- *
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
+defined('TYPO3') || die();
 
-defined('TYPO3') || die('Access denied.');
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 call_user_func(static function () {
   
-    // Add PageTSConfig
-   	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-         '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up_headerimage/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.typoscript">');
-            
+    
+    /* ==  Add TSconfig ============================================ */
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up_headerimage/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.tsconfig'");
+    
    	// Register icons
      $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
         
      $iconRegistry->registerIcon(
             't3upheaderimage_content',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:t3up_headerimage/Resources/Public/Icons/t3upheaderimage.png']
+            ['source' => 'EXT:t3up_headerimage/Resources/Public/Icons/t3upheaderimage.svg']
     ); 
      
      // Add backend preview hook
