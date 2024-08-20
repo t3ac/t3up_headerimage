@@ -97,7 +97,9 @@
 		    </trans-unit>
 
 
-
+			<trans-unit id="imageinf">
+			     <source>Image information</source>
+		    </trans-unit>	
 
 			<trans-unit id="overlay">
 			     <source>Image with an overlay</source>
