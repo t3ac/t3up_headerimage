@@ -42,39 +42,44 @@ xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
 	   
 		   <f:for each="{image}" as="image"> 
 			   <picture class="blur">
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
 				   
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
 				   
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp"> 
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg"> 
 							  
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
 					  
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">      
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">   
 								
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/webp"> 
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/jpeg">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"   media="(min-width: 769px)" type="image/webp"> 
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"   media="(min-width: 769px)" type="image/jpeg">
 						
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/webp"> 
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/jpeg">
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"   media="(min-width: 641px)" type="image/webp"> 
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"   media="(min-width: 641px)" type="image/jpeg">
 					  
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/webp">    
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/jpeg"> 
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"   media="(min-width: 481px)" type="image/webp">    
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"   media="(min-width: 481px)" type="image/jpeg"> 
 				   
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/webp">    
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/jpeg">             
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"   media="(min-width: 361px)" type="image/webp">    
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"   media="(min-width: 361px)" type="image/jpeg">             
 								   
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/webp">	
-				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/jpeg">	   
-			   
-   
-				   <img src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default'"  />
-				   
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">	
+				   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">	     
+						   
+			   	   <img class="w-100" role="Presentation"
+					   src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
+					   {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
+					   {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
+					   {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
+					   loading="lazy"
+					   />
+   				   
 			   </picture>   
 			   <div class="blurImageContainer w-100"  style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px; ')}{f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px')}">
 				   <div class="container pb-3 p-xl-0 blurImage">
@@ -197,44 +202,45 @@ xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
 
 <f:section name="picture">
    <picture>
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/webp">
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000')}"  media="(min-width: 2561px)" type="image/jpeg">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
 	   
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/webp">
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560')}"  media="(min-width: 1841px)" type="image/jpeg">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
 	   
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/webp"> 
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840')}"  media="(min-width: 1441px)" type="image/jpeg"> 
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp"> 
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg"> 
 				  
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/webp">
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440')}"  media="(min-width: 1281px)" type="image/jpeg">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
 		  
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/webp">      
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280')}"  media="(min-width: 993px)" type="image/jpeg">   
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">      
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">   
 					
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/webp"> 
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992')}"   media="(min-width: 769px)" type="image/jpeg">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"   media="(min-width: 769px)" type="image/webp"> 
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"   media="(min-width: 769px)" type="image/jpeg">
 			
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/webp"> 
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768')}"   media="(min-width: 641px)" type="image/jpeg">
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"   media="(min-width: 641px)" type="image/webp"> 
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"   media="(min-width: 641px)" type="image/jpeg">
 		  
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/webp">    
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640')}"   media="(min-width: 481px)" type="image/jpeg"> 
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"   media="(min-width: 481px)" type="image/webp">    
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"   media="(min-width: 481px)" type="image/jpeg"> 
 	   
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/webp">    
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480')}"   media="(min-width: 361px)" type="image/jpeg">             
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"   media="(min-width: 361px)" type="image/webp">    
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"   media="(min-width: 361px)" type="image/jpeg">             
 					   
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/webp">	
-	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360')}"  type="image/jpeg">	   
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">	
+	   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">	   
 			  
 	   <img class="w-100" role="Presentation"
 		   src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
-		   {f:if(condition: '{image.properties.height}', then: 'height="{image.properties.height}"')}            
-		   {f:if(condition: '{image.properties.width}', then: 'width="{image.properties.width}"')}
+		   
 		   {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
 		   {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
 		   {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
-		   style="{f:if(condition: settings.imageheight, then: 'min-height:{settings.imageheight}px;')} {f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px;')}" />
+		   style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px;')} {f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px;')}"
+		   loading="lazy"
+		   />
 
 	   <f:if condition="{settings.imageinf}" >
 		   <span class="inf symbol">&#xF05a;
