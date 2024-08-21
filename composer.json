@@ -11,11 +11,10 @@
   ],
   "license": ["GPL-2.0-or-later"],
   "keywords": [
-    "extension",
     "t3up"
   ],
   "require": {
-    "typo3/cms-core": "^11.4 || ^11.5"
+    "typo3/cms-core": "^11.4"
   },
   "autoload": {
     "psr-4": {
