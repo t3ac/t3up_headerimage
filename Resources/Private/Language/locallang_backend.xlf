@@ -82,13 +82,44 @@
 			     <source>No</source>
 		    </trans-unit>
 		    
-			<trans-unit id="imageminheight">
-			     <source>Min-height of the headerimageframe</source>
-		    </trans-unit>
-			<trans-unit id="imagemaxheight">
-			     <source>Max-height of the headerimageframe</source>
-		    </trans-unit>
-
+			<trans-unit id="label.format">
+			     <source>Image size format</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format0">
+			     <source>Free size</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format1">
+			     <source>3:2</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format2">
+			     <source>16:9</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format3">
+			     <source>2:1</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format4">
+			     <source>21:9</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format5">
+			     <source>3:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format6">
+			     <source>4:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format7">
+			     <source>5:1</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format8">
+			     <source>6:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format9">
+			     <source>7:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format10">
+			     <source>8:1</source>
+		    </trans-unit>	
+		    	    
+		    
 			<trans-unit id="headerimagebg">
 			     <source>Background-color, overlay-color</source>
 		    </trans-unit>  

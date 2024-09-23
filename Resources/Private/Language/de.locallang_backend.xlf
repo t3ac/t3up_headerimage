@@ -79,7 +79,7 @@
 		    		    
 			<trans-unit id="titlesize">
 			     <source>Size of the title</source>
-			     <target state="translated">Gr��e der �berschrift</target>
+			     <target state="translated">Größe der Überschrift</target>
 		    </trans-unit>		
 			<trans-unit id="size1">
 			     <source>h1</source>
