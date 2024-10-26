@@ -14,7 +14,7 @@
     "t3up"
   ],
   "require": {
-    "typo3/cms-core": "^11.5"
+    "typo3/cms-core": "^12.4"
   },
   "autoload": {
     "psr-4": {
