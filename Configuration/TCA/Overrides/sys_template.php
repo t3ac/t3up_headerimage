@@ -1,17 +1,6 @@
 <?php
+defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
-defined('TYPO3_MODE') || die ('Access denied.');
-
-call_user_func(
-    function ($extKey) {
-        /**
-         * Embed static TypoScript template(s)
-         */
-        TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-            't3up_headerimage',
-            'Configuration/TypoScript/',
-            'T3UP - Headerimage'
-        );
-    },
-    't3upheaderimage'
-);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    't3up_headerimage', 'Configuration/TypoScript/', 'T3UP - Headerimage'
+    );
