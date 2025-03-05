@@ -4,247 +4,242 @@ xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
 
 <f:switch expression="{flexFormData.display}">
 
-	<f:case value="A">
-		<div class="container p-xl-0 t3upheaderimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
-			<f:for each="{image}" as="image"> 
-				<f:render section="picture" arguments="{_all}"/>
-			</f:for>
+    <f:case value="A">
+        <div class="container position-relative p-xl-0 t3upheaderimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
+            <f:for each="{image}" as="image">
+                <f:render section="picture" arguments="{_all}"/>
+            </f:for>
 
-			<f:if condition="{flexFormData.title}">	
-				<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-					 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-					<f:if condition="{data.subheader}">
-						<p class="m-0">{data.subheader}</p>	
-					</f:if>
-				 </div>	 
-			 </f:if>
-		</div>	 
-  </f:case>	
-	  
-	<f:case value="C">
-		<div class="headerimageblur p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
-			
-			<f:if condition="{flexFormData.title}">	
-				<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-					<div class="container">
-						 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-						<f:if condition="{data.subheader}">
-							<p class="m-0">{data.subheader}</p>	
-						</f:if>
-					 </div>	
-				  </div>	
-			 </f:if>
-		
-		
-			<f:for each="{image}" as="image"> 
-				<div class="blur">
-					<picture>
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
-						
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
-						
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp"> 
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg"> 
-								  
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
-						  
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">	  
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">	
-									
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"	media="(min-width: 769px)" type="image/webp"> 
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"	media="(min-width: 769px)" type="image/jpeg">
-							
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"	media="(min-width: 641px)" type="image/webp"> 
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"	media="(min-width: 641px)" type="image/jpeg">
-						  
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"	media="(min-width: 481px)" type="image/webp">	
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"	media="(min-width: 481px)" type="image/jpeg"> 
-						
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"	media="(min-width: 361px)" type="image/webp">	
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"	media="(min-width: 361px)" type="image/jpeg">			 
-										
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">	
-						<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">		 
-								
-							<img class="w-100" role="Presentation"
-							src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
-							{f:if(condition: '{image.title}', then: 'title="{image.title}"')}
-							{f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}	
-							{f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
-							loading="lazy"
-							/>
-							
-					</picture>	
-				</div>
-				<div class="blurImageContainer w-100">
-					<div class="container p-xl-0 blurImage">
-						<f:render section="picture" arguments="{_all}"/>
-					</div>  
-				</div>  
-			</f:for>
-		</div>		 				
-  </f:case> 
-  
-	<f:case value="D">
-		<div class="t3upheaderimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{flexFormData.display}"
-			style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; "">
-				<div class="container p-xl-0">
-					<f:for each="{image}" as="image"> 
-						<f:render section="picture" arguments="{_all}"/>  
-					</f:for>
-					<f:if condition="{flexFormData.title}">	
-						<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-							 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-							<f:if condition="{data.subheader}">
-								<p class="m-0">{data.subheader}</p>	
-							</f:if>
-						 </div>
-					 </f:if>						  	
-				</div>	
-			<div class="headerimagebg w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; z-index: -1;" > </div> 
-		</div>	 
-  </f:case> 
-  
-	<f:case value="E">
-		<div class="t3upheaderimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0 headerimagetyle{flexFormData.display}" >
-			<div class="overlayHeaderImage w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};"></div> 
-			<f:for each="{image}" as="image"> 
-				<f:render section="picture" arguments="{_all}"/> 
-			</f:for>
-			<f:if condition="{flexFormData.title}">	
-				<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-					 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-					<f:if condition="{data.subheader}">
-						<p class="m-0">{data.subheader}</p>	
-					</f:if>
-				 </div>
-			 </f:if>
-		</div>	 
-  </f:case>	
-  
-	<f:case value="F">
-		<div class="t3upheaderimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{flexFormData.display}" >
-			<f:for each="{image}" as="image"> 
-				<f:render section="picture" arguments="{_all}"/>
-			</f:for>	 
-			<f:if condition="{flexFormData.title}">	
-				<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-					 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-					<f:if condition="{data.subheader}">
-						<p class="m-0">{data.subheader}</p>	
-					</f:if>
-				 </div>
-			 </f:if>				 			
-		</div>	
-  </f:case> 
-  
-	<f:case value="G">
-		<div class="headerimageframeBG">	
-			<div class="container p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"  >				
-				<div class="row t3upheaderimage m-0" style="background-color: {flexFormData.headerimagebg};" >
-					<div class="col-12 col-md-9 px-0 mb-3 mb-md-0" >					
-						<f:for each="{image}" as="image"> 
-							<f:render section="picture" arguments="{_all}"/>
-						</f:for>
-					</div>	
-					<div class="col-12 col-md-3 p-3 p-md-4 plg-5 cont">					
-						<span class="h3 mb-2">{data.header}</span>	
-						{f:if(condition: data.subheader, then: '<span class="p"><br />{data.subheader}</span>')}
-					</div>										
-				</div>			 
-			</div> 
-	  </div>	
+            <f:if condition="{flexFormData.title}">
+                <div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
+                <div class="container">
+                     <p class="{flexFormData.titlesize} m-0">{data.header}</p>
+                    <f:if condition="{data.subheader}">
+                        <p class="m-0">{data.subheader}</p>
+                    </f:if>
+                 </div>
+              </div>
+             </f:if>
+        </div>
+  </f:case>
+      
+    <f:case value="C">
+        <div class="headerimageblur position-relative p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
+
+            <f:for each="{image}" as="image">
+                <div class="blur">
+                    <picture>
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
+                        
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
+                        
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg">
+                                  
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
+                          
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">
+                                    
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"    media="(min-width: 769px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"    media="(min-width: 769px)" type="image/jpeg">
+                            
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"    media="(min-width: 641px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"    media="(min-width: 641px)" type="image/jpeg">
+                          
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"    media="(min-width: 481px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"    media="(min-width: 481px)" type="image/jpeg">
+                        
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"    media="(min-width: 361px)" type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"    media="(min-width: 361px)" type="image/jpeg">
+                                        
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">
+                        <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">
+                                
+                            <img class="w-100" role="Presentation"
+                            src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
+                            {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
+                            {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
+                            {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
+                            loading="lazy"
+                            />
+                            
+                    </picture>
+                </div>
+                <div class="blurImageContainer w-100">
+                    <div class="container p-xl-0 blurImage">
+                        <f:render section="picture" arguments="{_all}"/>
+                    </div>
+                </div>
+            </f:for>
+        </div>
   </f:case>
   
-	<f:case value="H">
-		<div class="t3upheaderimage  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{flexFormData.display}"" >
-				<div class="overlayHeaderImage w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; z-index:1;"></div> 
-				<f:for each="{image}" as="image"> 
-					<f:render section="picture" arguments="{_all}"/>  
-				</f:for>	
-				<f:if condition="{flexFormData.title}">	
-					<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-						 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-						<f:if condition="{data.subheader}">
-							<p class="m-0">{data.subheader}</p>	
-						</f:if>
-					 </div>
-				 </f:if>			 			
-		</div>	
-  </f:case>	
-  
-	<f:case value="I">
-		<div class="t3upheaderimage w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{flexFormData.display}" >
-			<f:for each="{image}" as="image"> 
-				<f:render section="picture" arguments="{_all}"/>
-			</f:for>	 
-			<f:if condition="{flexFormData.title}">	
-				<div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
-					 <span class="{flexFormData.titlesize} m-0">{data.header}</span>	
-					<f:if condition="{data.subheader}">
-						<p class="m-0">{data.subheader}</p>	
-					</f:if>
-				 </div>
-			 </f:if>				 			
-		</div>	
+    <f:case value="D">
+        <div class="t3upheaderimage position-relative {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{flexFormData.display}"
+            style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; "">
+                <div class="container p-xl-0">
+                    <f:for each="{image}" as="image">
+                        <f:render section="picture" arguments="{_all}"/>
+                    </f:for>
+                    <f:if condition="{flexFormData.title}">
+                        <div class="headerimagetitle container" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
+                             <p class="{flexFormData.titlesize} m-0">{data.header}</p>
+                            <f:if condition="{data.subheader}">
+                                <p class="m-0">{data.subheader}</p>
+                            </f:if>
+                         </div>
+                     </f:if>
+                </div>
+            <div class="headerimagebg w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; z-index: -1;" ></div>
+        </div>
   </f:case>
   
+    <f:case value="E">
+        <div class="t3upheaderimage position-relative {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} container p-0 headerimagetyle{flexFormData.display}" >
+            <div class="overlayHeaderImage w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};"></div>
+            <f:for each="{image}" as="image">
+                <f:render section="picture" arguments="{_all}"/>
+            </f:for>
+            <f:if condition="{flexFormData.title}">
+                <div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
+                     <p class="{flexFormData.titlesize} m-0">{data.header}</p>
+                    <f:if condition="{data.subheader}">
+                        <p class="m-0">{data.subheader}</p>
+                    </f:if>
+                 </div>
+             </f:if>
+        </div>
+    </f:case>
+  
+    <f:case value="F">
+        <div class="t3upheaderimage position-relative w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{flexFormData.display}" >
+            <f:for each="{image}" as="image">
+                <f:render section="picture" arguments="{_all}"/>
+            </f:for>
+            <f:if condition="{flexFormData.title}">
+                <div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >            
+                    <div class="container">
+                         <p class="{flexFormData.titlesize} m-0">{data.header}</p>
+                        <f:if condition="{data.subheader}">
+                            <p class="m-0">{data.subheader}</p>
+                        </f:if>
+                     </div>
+                 </div>
+             </f:if>
+        </div>
+  </f:case>
+  
+    <f:case value="G">
+        <div class="headerimageframeBG position-relative">
+            <div class="container p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"  >
+                <div class="row t3upheaderimage m-0" style="background-color: {flexFormData.headerimagebg};" >
+                    <div class="col-12 col-md-9 px-0 mb-3 mb-md-0" >
+                        <f:for each="{image}" as="image">
+                            <f:render section="picture" arguments="{_all}"/>
+                        </f:for>
+                    </div>
+                    <div class="col-12 col-md-3 p-3 p-md-4 plg-5 cont">
+                        <span class="h3 mb-2">{data.header}</span>
+                        {f:if(condition: data.subheader, then: '<span class="p"><br />{data.subheader}</span>')}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:case>
+  
+    <f:case value="H">
+        <div class="t3upheaderimage position-relative {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{flexFormData.display}"" >
+            <div class="overlayHeaderImage w-100" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity}; z-index:1;"></div>
+                <f:for each="{image}" as="image">
+                    <f:render section="picture" arguments="{_all}"/>
+                </f:for>
+                <f:if condition="{flexFormData.title}">
+                    <div class="headerimagetitle" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" >
+                        <div class="container">                        
+                            <p class="{flexFormData.titlesize} m-0">{data.header}</p>
+                                <f:if condition="{data.subheader}">
+                                <p class="m-0">{data.subheader}</p>
+                            </f:if>
+                        </div>
+                  </div>
+            </f:if>
+        </div>
+  </f:case>
+  
+    <f:case value="I">
+        <div class="t3upheaderimage position-relative w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{flexFormData.display}" >
+            <f:for each="{image}" as="image">
+                <f:render section="picture" arguments="{_all}"/>
+            </f:for>
+            <f:if condition="{flexFormData.title}">
+                 <div class="container">
+                     <div class="headerimagetitle px-0 d-block w-auto">
+                        <p class="{flexFormData.titlesize} mb-3 p-3 d-inline-block" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};">{data.header}</p>
+                        <f:if condition="{data.subheader}">
+                            <p class="mb-3 p-3 d-block" style="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};">{data.subheader}</p>
+                        </f:if>
+                    </div>
+                 </div>
+            </f:if>
+        </div>
+  </f:case>
 </f:switch>
 
 <f:section name="picture">
-	<div class="headerimage imageformat{flexFormData.imageformat}"> 
-		<picture> 	
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
-			
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
-			
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp"> 
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg"> 
-					  
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
-			  
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">	  
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">	
-						
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"	media="(min-width: 769px)" type="image/webp"> 
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"	media="(min-width: 769px)" type="image/jpeg">
-				
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"	media="(min-width: 641px)" type="image/webp"> 
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"	media="(min-width: 641px)" type="image/jpeg">
-			  
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"	media="(min-width: 481px)" type="image/webp">	
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"	media="(min-width: 481px)" type="image/jpeg"> 
-			
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"	media="(min-width: 361px)" type="image/webp">	
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"	media="(min-width: 361px)" type="image/jpeg">			 
-							
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">	
-			<source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">		
-				  
-			<img class="w-100" role="Presentation"
-				src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
-				
-				{f:if(condition: '{image.title}', then: 'title="{image.title}"')}
-				{f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}	
-				{f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
-				loading="lazy"
-				/>
-	
-			<f:if condition="{flexFormData.imageinf}" >
-				<span class="inf symbol">&#xF05a;
-					<p>copyright:<br /> 
-					<f:format.nl2br>{image.properties.copyright}</f:format.nl2br>
-					</p>
-				</span> 
-			</f:if>
-		</picture>
-	</div>
+    <div class="headerimage imageformat{flexFormData.imageformat}">
+        <picture>
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'webp')}"  media="(min-width: 2561px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '4000', fileExtension: 'jpg')}"  media="(min-width: 2561px)" type="image/jpeg">
+            
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'webp')}"  media="(min-width: 1841px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '2560', fileExtension: 'jpg')}"  media="(min-width: 1841px)" type="image/jpeg">
+            
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'webp')}"  media="(min-width: 1441px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1840', fileExtension: 'jpg')}"  media="(min-width: 1441px)" type="image/jpeg">
+                      
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'webp')}"  media="(min-width: 1281px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1440', fileExtension: 'jpg')}"  media="(min-width: 1281px)" type="image/jpeg">
+              
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'webp')}"  media="(min-width: 993px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '1280', fileExtension: 'jpg')}"  media="(min-width: 993px)" type="image/jpeg">
+                        
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"    media="(min-width: 769px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"    media="(min-width: 769px)" type="image/jpeg">
+                
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"    media="(min-width: 641px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"    media="(min-width: 641px)" type="image/jpeg">
+              
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"    media="(min-width: 481px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"    media="(min-width: 481px)" type="image/jpeg">
+            
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"    media="(min-width: 361px)" type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"    media="(min-width: 361px)" type="image/jpeg">
+                            
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">
+            <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">
+                  
+            <img class="w-100" role="Presentation"
+                src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
+                
+                {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
+                {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
+                {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
+                loading="lazy"
+                />
+    
+            <f:if condition="{flexFormData.imageinf}" >
+                <span class="inf symbol">&#xF05a;
+                    <p>copyright:<br />
+                    <f:format.nl2br>{image.properties.copyright}</f:format.nl2br>
+                    </p>
+                </span>
+            </f:if>
+        </picture>
+    </div>
 </f:section>
 
 </html>
