@@ -9,7 +9,6 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['t3upheaderimage_conte
 
 call_user_func(function () {
     
-     $customLanguageFilePrefix   = 'LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:';
      $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
 
     // Add the CType "headerimage_content"
@@ -26,7 +25,7 @@ call_user_func(function () {
                 ' . $frontendLanguageFilePrefix . 'palette.general;general,  
                  header,header_link,subheader,
                  assets, 
-		    --div--;LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimage.flexvalues, pi_flexform,
+		    --div--;LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:headerimage.flexvalues, pi_flexform,
 		    --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 		    --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,space_after_class,
 		    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,

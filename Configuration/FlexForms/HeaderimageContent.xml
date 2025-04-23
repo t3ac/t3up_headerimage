@@ -8,94 +8,94 @@
                 <type>array</type>
                 <el>
                     <display>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:display</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:display</label>
                              <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
                             <items>
                                 <numIndex index="0">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:simple</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:simple</label>
                                     <value>A</value>   
                                 </numIndex>
                                 <numIndex index="1">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:blur</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:blur</label>
                                     <value>C</value>   
                                 </numIndex>
                                 <numIndex index="2">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:color</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:color</label>
                                     <value>D</value>                               
                                </numIndex>  
                                 <numIndex index="3">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:overlay</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:overlay</label>
                                     <value>E</value>                               
                                </numIndex> 
                                 <numIndex index="4">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wide</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:wide</label>
                                     <value>F</value>                               
                                </numIndex>  
                                <numIndex index="5">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:text</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:text</label>
                                     <value>G</value>                               
                                </numIndex> 
                                <numIndex index="6">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:wideoverlay</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:wideoverlay</label>
                                     <value>H</value>                               
                                </numIndex>
                                 <numIndex index="7">
-                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:spezial</label>
+                                       <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:spezial</label>
                                     <value>I</value>                               
                                </numIndex>
                             </items>
                         </config>
                     </display>
                     <imageformat>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format</label>
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format0</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format0</label>
                                         <value>0</value>
                                     </numIndex>  
                                     <numIndex index="1" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format1</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format1</label>
                                         <value>1</value>
                                     </numIndex>
                                     <numIndex index="2" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format2</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format2</label>
                                         <value>2</value>
                                     </numIndex>    
                                     <numIndex index="3" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format3</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format3</label>
                                         <value>3</value>
                                     </numIndex>  
                                     <numIndex index="4" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format4</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format4</label>
                                         <value>4</value>
                                     </numIndex>
                                     <numIndex index="5" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format5</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format5</label>
                                         <value>5</value>
                                     </numIndex>     
                                     <numIndex index="6" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format6</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format6</label>
                                         <value>6</value>
                                     </numIndex>      
                                     <numIndex index="7" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format7</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format7</label>
                                         <value>7</value>
                                     </numIndex>  
                                     <numIndex index="8" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format8</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format8</label>
                                         <value>8</value>
                                     </numIndex>
                                     <numIndex index="9" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format9</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format9</label>
                                         <value>9</value>
                                     </numIndex>     
                                     <numIndex index="10" type="array">
-                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:label.format10</label>
+                                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.format10</label>
                                         <value>10</value>
                                     </numIndex>    
                                 </items>
@@ -103,42 +103,44 @@
                             </config>
                     </imageformat>
                       <title>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:title</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:title</label>>   
                         <displayCond>
                             <OR>
-                                <numIndex index="1">FIELD:display:=:A</numIndex>
-                                <numIndex index="2">FIELD:display:=:D</numIndex>
-                                <numIndex index="3">FIELD:display:=:E</numIndex>
-                                <numIndex index="4">FIELD:display:=:G</numIndex>
-                                <numIndex index="5">FIELD:display:=:H</numIndex>                                
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex> 
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="5">FIELD:sDEF.display:=:H</numIndex>              
                             </OR>
-                        </displayCond>      
+                        </displayCond>  
                         <config>
                             <type>select</type>
                             <renderType>selectSingle</renderType>                                
                             <items>
                                 <numIndex index="0" type="array">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:no</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:no</label>
                                     <value></value>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:yes</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:yes</label>
                                     <value>1</value>
                                 </numIndex>
                             </items>
                         </config>
                     </title>  
                       <titlesize>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:titlesize</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:titlesize</label>
                         <displayCond>
                             <OR>
-                                <numIndex index="1">FIELD:display:=:A</numIndex>
-                                <numIndex index="2">FIELD:display:=:D</numIndex>
-                                <numIndex index="3">FIELD:display:=:E</numIndex>
-                                <numIndex index="3">FIELD:display:=:F</numIndex>
-                                <numIndex index="4">FIELD:display:=:G</numIndex>
-                                <numIndex index="5">FIELD:display:=:H</numIndex>   
-                                <numIndex index="5">FIELD:display:=:I</numIndex>                             
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>        
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex>
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="5">FIELD:sDEF.display:=:G</numIndex>
+                                <numIndex index="6">FIELD:sDEF.display:=:H</numIndex>   
+                                <numIndex index="7">FIELD:sDEF.display:=:I</numIndex>                             
                             </OR>
                         </displayCond> 
                         <config>
@@ -146,37 +148,28 @@
                             <renderType>selectSingle</renderType>                                
                             <items>
                                 <numIndex index="0" type="array">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size1</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:size1</label>
                                     <value>h1</value>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size2</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:size2</label>
                                     <value>h2</value>
                                 </numIndex>
                                 <numIndex index="2">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size3</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:size3</label>
                                     <value>h3</value>
                                 </numIndex>
                                 <numIndex index="3">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:size4</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:size4</label>
                                     <value>h4</value>
                                 </numIndex>
                             </items>
                             <default>h3</default> 
                         </config>
                     </titlesize>  
+                    
                     <headerimagebg>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headerimagebg</label>
-                        <displayCond>
-                            <OR>
-                                <numIndex index="1">FIELD:display:=:D</numIndex>
-                                <numIndex index="2">FIELD:display:=:E</numIndex>
-                                <numIndex index="3">FIELD:display:=:F</numIndex>
-                                <numIndex index="3">FIELD:display:=:G</numIndex>
-                                <numIndex index="4">FIELD:display:=:H</numIndex>
-                                <numIndex index="5">FIELD:display:=:I</numIndex>                             
-                            </OR>
-                        </displayCond>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:headerimagebg</label>
                          <config type="array">
                             <type>input</type> 
                             <size>10</size> 
@@ -185,12 +178,17 @@
                         </config>
                     </headerimagebg> 
                     <headeropacity>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:headeropacity</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:headeropacity</label>
                         <displayCond>
                             <OR>
-                                <numIndex index="1">FIELD:display:=:D</numIndex>
-                                <numIndex index="2">FIELD:display:=:E</numIndex>
-                                <numIndex index="3">FIELD:display:=:H</numIndex>                                
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>        
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex>
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="5">FIELD:sDEF.display:=:G</numIndex>
+                                <numIndex index="6">FIELD:sDEF.display:=:H</numIndex>   
+                                <numIndex index="7">FIELD:sDEF.display:=:I</numIndex>                                
                             </OR>
                         </displayCond>
                         <config>
@@ -265,19 +263,129 @@
                             <default>b</default>
                            </config> 
                     </headeropacity> 
-
+                    <color>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.color</label>
+                        <displayCond>
+                            <OR>
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>        
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex>
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="5">FIELD:sDEF.display:=:G</numIndex>
+                                <numIndex index="6">FIELD:sDEF.display:=:H</numIndex>   
+                                <numIndex index="7">FIELD:sDEF.display:=:I</numIndex>                             
+                            </OR>
+                        </displayCond> 
+                        <config>
+                            <type>input</type> 
+                                <size>6</size> 
+                                <renderType>colorpicker</renderType>
+                                <default>inherit</default> 
+                        </config>
+                    </color>     
+                    <textalign>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.textalign</label>
+                        <displayCond>
+                            <OR>
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>        
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex>
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="6">FIELD:sDEF.display:=:H</numIndex>   
+                                <numIndex index="7">FIELD:sDEF.display:=:I</numIndex>                             
+                            </OR>
+                        </displayCond> 
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.start</label>
+                                    <value>start</value>
+                                </numIndex>                 
+                                <numIndex index="1" type="array">
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.center</label>
+                                    <value>center</value>
+                                </numIndex>
+                                <numIndex index="2" type="array">
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.end</label>
+                                    <value>end</value>
+                                </numIndex>
+                            </items>
+                            <default>center</default>
+                        </config>
+                    </textalign>
+                    <textpadding>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:label.textpadding</label>
+                        <displayCond>
+                            <OR>
+                                <numIndex index="0">FIELD:sDEF.display:=:A</numIndex>
+                                <numIndex index="1">FIELD:sDEF.display:=:C</numIndex>        
+                                <numIndex index="2">FIELD:sDEF.display:=:D</numIndex>
+                                <numIndex index="3">FIELD:sDEF.display:=:E</numIndex>
+                                <numIndex index="4">FIELD:sDEF.display:=:F</numIndex>
+                                <numIndex index="6">FIELD:sDEF.display:=:H</numIndex>   
+                                <numIndex index="7">FIELD:sDEF.display:=:I</numIndex>                             
+                            </OR>
+                        </displayCond> 
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label>0.25rem</label>
+                                    <value>0.25</value>
+                                </numIndex>                 
+                                <numIndex index="1" type="array">
+                                    <label>0.33rem</label>
+                                    <value>0.33</value>
+                                </numIndex>
+                                <numIndex index="3" type="array">
+                                    <label>0.5rem</label>
+                                    <value>0.50</value>
+                                </numIndex>
+                                <numIndex index="4" type="array">
+                                    <label>0.75rem</label>
+                                    <value>0.75</value>
+                                </numIndex>
+                                <numIndex index="5" type="array">
+                                    <label>1rem</label>
+                                    <value>1</value>
+                                </numIndex> 
+                                <numIndex index="6" type="array">
+                                    <label>1.25rem</label>
+                                    <value>1.25</value>
+                                </numIndex>
+                                <numIndex index="7" type="array">
+                                    <label>1.5rem</label>
+                                    <value>1.50</value>
+                                </numIndex>
+                                <numIndex index="8" type="array">
+                                    <label>1.75rem</label>
+                                    <value>1.75</value>
+                                </numIndex> 
+                                <numIndex index="9" type="array">
+                                    <label>2rem</label>
+                                    <value>2</value>
+                                </numIndex>                                           
+                            </items>
+                            <default>0.50</default>
+                        </config>
+                    </textpadding>
                     <imageinf>
-                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:imageinf</label>
+                        <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:imageinf</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingle</renderType>                                
                             <items>
                                 <numIndex index="0" type="array">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:no</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:no</label>
                                     <value></value>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang_backend.xlf:yes</label>
+                                    <label>LLL:EXT:t3up_headerimage/Resources/Private/Language/locallang.xlf:yes</label>
                                     <value>1</value>
                                 </numIndex>
                             </items>

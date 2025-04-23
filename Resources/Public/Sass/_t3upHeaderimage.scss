@@ -34,8 +34,7 @@
         }
     }
         
-    .headerimagetitle                                   {position: absolute; z-index: 2; width: 100%; text-align: left; color: $white; bottom: 0; padding: $v1; }
-    .headerimagetitle *                                 {color: $white;}
+    .headerimagetitle                                   {position: absolute; z-index: 2; width: 100%; bottom: 0;}
     
     /* D - BG-Color */
     .headerimagetyleD{
@@ -51,19 +50,19 @@
     
     /* F - Overlay */
     .headerimagetyleF{
-        span                                            {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important; text-align: left; }
+        span                                            {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important;}
     }
     
     /* G - Text */
     
     .headerimageframeBG                                {width: 100%; display: block;}
-    .headerimageframeBG .h3                            {color: $white; font-weight: 600; letter-spacing: 0.1px;margin-bottom: $v1;line-height: 1.2em;font-size: 1.5em; display: inline-block;}
-    .headerimageframeBG .p                              {color: $white; font-size: 1em; font-weight: 500;}
+    .headerimageframeBG .h3                            {font-weight: 600; letter-spacing: 0.1px;margin-bottom: $v1;line-height: 1.2em;font-size: 1.5em; display: inline-block;}
+    .headerimageframeBG .p                              {font-size: 1em; font-weight: 500;}
     
      /* H - Overlay */
     &.headerimagetyleH{
         .overlayHeaderImage                             {position: absolute; z-index: 11; left: 0; }
-        span                                            {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important; text-align: left; }
+        span                                            {display: block; margin-left: auto !important; margin-right: auto !important; padding-bottom: 0 !important; width: $container; margin-bottom: 0 !important; border: 0 !important; }
     }
     
      /* I - Overlay */

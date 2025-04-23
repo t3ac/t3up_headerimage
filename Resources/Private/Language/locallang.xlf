@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3up_headerimage">
+		<header/>
+		<body>
+			
+			/* -- BACKENDLAYOUTS ------------------------- */
+			<trans-unit id="tab.title">
+			     <source>h_da - Elements</source>
+		    </trans-unit>
+			<trans-unit id="tab.headerConfig">
+			     <source>Configuration</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.title">
+			     <source>Headerimage</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.description">
+			     <source>Big headerimage for the media area</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.header">
+			     <source>Header (not vissible)</source>
+		    </trans-unit>	    
+			<trans-unit id="headerimage.image">
+			     <source>Headerimage</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.flexvalues">
+			     <source>Control</source>
+		    </trans-unit>		    
+
+		  
+		    
+			/* -- DESIGN ------------------------- */	    
+			
+			<trans-unit id="display">
+			     <source>Headerimage variations</source>
+		    </trans-unit>		    
+			<trans-unit id="simple">
+			     <source>Simple Headerimage</source>
+		    </trans-unit>
+			<trans-unit id="blur">
+			     <source>Headerimage with blur-effect</source>
+		    </trans-unit>	    
+			<trans-unit id="color">
+			     <source>Headerimage with background-color</source>
+		    </trans-unit>	     
+			<trans-unit id="wide">
+			     <source>Headerimage no limit</source>
+		    </trans-unit>	  
+			<trans-unit id="wideoverlay">
+			     <source>Headerimage no limit, with overlay</source>
+		    </trans-unit>	  
+			<trans-unit id="spezial">
+			     <source>Special</source>
+		    </trans-unit>			    
+			<trans-unit id="text">
+			     <source>with the titletext and subtitletext on the right</source>
+		    </trans-unit>  
+		    
+			<trans-unit id="titlesize">
+			     <source>Size of the title</source>
+		    </trans-unit>		
+			<trans-unit id="size1">
+			     <source>h1</source>
+		    </trans-unit>		
+			<trans-unit id="size2">
+			     <source>h2</source>
+		    </trans-unit>		
+			<trans-unit id="size3">
+			     <source>h3</source>
+		    </trans-unit>		
+			<trans-unit id="size4">
+			     <source>h4</source>
+		    </trans-unit>	
+		    
+			<trans-unit id="title">
+			     <source>Show the title/subtitle</source>
+			</trans-unit>     
+			<trans-unit id="yes">
+			     <source>Yes</source>
+		    </trans-unit>
+			<trans-unit id="no">
+			     <source>No</source>
+		    </trans-unit>
+		    
+			<trans-unit id="label.format">
+			     <source>Image size format</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format0">
+			     <source>Free size</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format1">
+			     <source>3:2</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format2">
+			     <source>16:9</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format3">
+			     <source>2:1</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format4">
+			     <source>21:9</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format5">
+			     <source>3:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format6">
+			     <source>4:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format7">
+			     <source>5:1</source>
+		    </trans-unit>		    
+			<trans-unit id="label.format8">
+			     <source>6:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format9">
+			     <source>7:1</source>
+		    </trans-unit>	
+			<trans-unit id="label.format10">
+			     <source>8:1</source>
+		    </trans-unit>	
+		    	    
+		    
+			<trans-unit id="headerimagebg">
+			     <source>Background-color, overlay-color</source>
+		    </trans-unit>  
+			<trans-unit id="headeropacity">
+			     <source>Opacity (in percent) of the overlay-color</source>
+		    </trans-unit>
+
+            <trans-unit id="label.color">
+                 <source>Textcolor</source>
+            </trans-unit> 
+            <trans-unit id="label.textalign">
+                 <source>Textalign</source>
+            </trans-unit> 
+            <trans-unit id="label.start">
+                 <source>Left</source>
+            </trans-unit> 
+            <trans-unit id="label.center">
+                 <source>Center</source>
+            </trans-unit> 
+            <trans-unit id="label.end">
+                 <source>Right</source>
+            </trans-unit>  
+            <trans-unit id="label.textpadding">
+                 <source>Padding</source>
+            </trans-unit>  
+             
+            
+			<trans-unit id="imageinf">
+			     <source>Image information</source>
+		    </trans-unit>	
+
+			<trans-unit id="overlay">
+			     <source>Image with an overlay</source>
+		    </trans-unit>	
+		    
+		</body>
+	</file>
+</xliff>
