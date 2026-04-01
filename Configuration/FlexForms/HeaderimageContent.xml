@@ -314,7 +314,7 @@
                                     <value>end</value>
                                 </numIndex>
                             </items>
-                            <default>center</default>
+                            <default>start</default>
                         </config>
                     </textalign>
                     <textpadding>
@@ -331,47 +331,9 @@
                             </OR>
                         </displayCond> 
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingle</renderType>
-                            <items>
-                                <numIndex index="0" type="array">
-                                    <label>0.25rem</label>
-                                    <value>0.25</value>
-                                </numIndex>                 
-                                <numIndex index="1" type="array">
-                                    <label>0.33rem</label>
-                                    <value>0.33</value>
-                                </numIndex>
-                                <numIndex index="3" type="array">
-                                    <label>0.5rem</label>
-                                    <value>0.50</value>
-                                </numIndex>
-                                <numIndex index="4" type="array">
-                                    <label>0.75rem</label>
-                                    <value>0.75</value>
-                                </numIndex>
-                                <numIndex index="5" type="array">
-                                    <label>1rem</label>
-                                    <value>1</value>
-                                </numIndex> 
-                                <numIndex index="6" type="array">
-                                    <label>1.25rem</label>
-                                    <value>1.25</value>
-                                </numIndex>
-                                <numIndex index="7" type="array">
-                                    <label>1.5rem</label>
-                                    <value>1.50</value>
-                                </numIndex>
-                                <numIndex index="8" type="array">
-                                    <label>1.75rem</label>
-                                    <value>1.75</value>
-                                </numIndex> 
-                                <numIndex index="9" type="array">
-                                    <label>2rem</label>
-                                    <value>2</value>
-                                </numIndex>                                           
-                            </items>
-                            <default>0.50</default>
+                            <type>input</type>
+                            <size>20</size>
+                            <default>$v05</default>
                         </config>
                     </textpadding>
                     <imageinf>

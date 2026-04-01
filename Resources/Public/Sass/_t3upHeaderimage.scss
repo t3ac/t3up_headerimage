@@ -4,32 +4,32 @@
                                                             
          img                                            {width: 100%; height: 100%; object-fit: cover; object-position: center top;}
          
-        &.imageformat1 {                                aspect-ratio: 3 / 2;}
-        &.imageformat2 {                                aspect-ratio: 16 / 9;
+        &.imageformat1 {                                aspect-ratio: 1.5;}
+        &.imageformat2 {                                aspect-ratio: 1.8;
             img                                        {object-position: center 10%;}    
         }       
-        &.imageformat3 {                                aspect-ratio: 18 / 9;
+        &.imageformat3 {                                aspect-ratio: 2;
             img                                        {object-position: center 10%;}    
         }     
-        &.imageformat4 {                                aspect-ratio: 21 / 9;
+        &.imageformat4 {                                aspect-ratio: 2.4;
             img                                        {object-position: center 10%;}    
         }
-        &.imageformat5{                                aspect-ratio: 3 / 1;
+        &.imageformat5{                                aspect-ratio: 3;
             img                                        {object-position: center 20%;}
         }
-        &.imageformat6{                                aspect-ratio: 4 / 1;
+        &.imageformat6{                                aspect-ratio: 4;
             img                                        {object-position: center 20%;}
         }
-        &.imageformat7{                                aspect-ratio: 5 / 1;
+        &.imageformat7{                                aspect-ratio: 5;
             img                                        {object-position: center 20%;}    
         }
-        &.imageformat8{                                aspect-ratio: 6 / 1;
+        &.imageformat8{                                aspect-ratio: 6;
             img                                        {object-position: center 30%;}        
         }
-        &.imageformat9{                                aspect-ratio: 7 / 1;
+        &.imageformat9{                                aspect-ratio: 7;
             img                                        {object-position: center 30%;}        
         }
-        &.imageformat10{                                aspect-ratio: 8 / 1;
+        &.imageformat10{                               aspect-ratio: 8;
             img                                        {object-position: center 30%;}    
         }
     }
@@ -73,8 +73,8 @@
     }
 
 
-    span.inf                                            {cursor: pointer; position: absolute; top:$v060; left: $v1; color: $white; font-size: 150%;z-index: 11;}
-    span.inf > p                                        {cursor: text; background: rgba($baseColor, .7); font-family: $font; display: none; padding: 5px; font-size: $v1;}
+    span.inf                                            {cursor: pointer; position: absolute; top:$v06; left: $v1; color: $white; font-size: 150%;z-index: 11;}
+    span.inf > p                                        {cursor: text; background: rgba($basicColor, .7); font-family: $font; display: none; padding: 5px; font-size: $v1;}
     span.inf:hover > p                                  {display: block;}
 }
 

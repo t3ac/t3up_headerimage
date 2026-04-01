@@ -8,19 +8,19 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'T3UP - Headerimage',
     'description'      => 'Headerimage as a content element',
-    'version'          => '13.0.07',
+    'version'          => '13.2.01',
     'state'            => 'stable',
     'category'         => 'fe',
     'author'           => 'Michael Lang',
-    'author_email'     => 'michael.lang@h-da.de',
-    'author_company'   => 'h_da Hochschule Darmstadt',
+    'author_email'     => 'info@t3ac.de',
+    'author_company'   => 'Mediadesign',
     'uploadfolder'     => false,
     'createDirs'       => '',
     'clearcacheonload' => false,
     'constraints'      => [
         'depends'   => [
             'typo3'          => '13.4.0-',
-            't3up'           => '13-',
+            't3up'           => '13.2-',
         ],
         'conflicts' => [],
         'suggests'  => [],

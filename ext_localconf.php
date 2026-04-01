@@ -1,6 +1,6 @@
 <?php
 
-defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
+defined('TYPO3') || die('Access denied.');
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
@@ -21,6 +21,6 @@ call_user_func(static function () {
      
      // Add backend preview hook
      $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['t3upheaderimage_content'] =
-     T3ac\T3upHeaderimage\Hooks\HeaderimagePreviewRenderer::class;
+     Hda\T3upHeaderimage\Hooks\HeaderimagePreviewRenderer::class;
      
 }); 

@@ -22,9 +22,10 @@ tt_content {
 }
 
 page.includeCSS{
-   	t3up_headerimage                 = {$page.scss.scssT3upHeaderimage}
+   	t3up_headerimage                 = EXT:t3up_headerimage/Resources/Public/Sass/_t3upHeaderimage.scss
     t3up_headerimage.linenumber      = true    
 }
+
 
 page.includeJSFooterlibs {
     t3upheaderimage                  = EXT:t3up_headerimage/Resources/Public/JavaScript/t3upheaderimage.js
