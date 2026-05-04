@@ -21,6 +21,6 @@ call_user_func(static function () {
      
      // Add backend preview hook
      $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['t3upheaderimage_content'] =
-     Hda\T3upHeaderimage\Hooks\HeaderimagePreviewRenderer::class;
+     T3ac\T3upHeaderimage\Hooks\HeaderimagePreviewRenderer::class;
      
 }); 
