@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3up_headerimage">
+		<header/>
+		<body>
+			
+			/* -- BACKENDLAYOUTS ------------------------- */
+			<trans-unit id="tab.title">
+			     <source>h_da - Elemente</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.title">
+			     <source>Kopfbild</source>
+		    </trans-unit>
+			<trans-unit id="headerimage.description">
+			     <source>Großes Kopfbild für Bereich Media</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.header">
+			      <source>Überschrift, nicht sichtbar</source>
+		    </trans-unit>	    
+			<trans-unit id="headerimage.image">
+			     <source>Headerimage</source>
+		    </trans-unit>	
+			<trans-unit id="headerimage.flexvalues">
+			      <source>Einstellungen</source>
+		    </trans-unit>		
+		    
+		    /* -- DESIGN ------------------------- */
+			<trans-unit id="display">
+			     <source>Anzeigearten</source>
+		    </trans-unit>		    
+			<trans-unit id="simple">
+			     <source>Einfaches Kopfbild</source>
+		    </trans-unit>
+			<trans-unit id="blur">
+			     <source>Kopfbild mit Weichzeicheneffekt</source>
+		    </trans-unit>	    
+			<trans-unit id="color">
+			     <source>Kopfbild mit Hintergrundfarbe</source>
+		    </trans-unit>	     
+			<trans-unit id="wide">
+			     <source>Breites Kopfbild</source>
+		    </trans-unit>	
+			<trans-unit id="wideoverlay">
+			     <source>Breites Kopfbild mit transparenter Farbfläche</source>
+		    </trans-unit>	  	  
+
+			<trans-unit id="title">
+			     <source>Anzeige des Titels/Untertitels</source>
+		    </trans-unit>	
+			<trans-unit id="yes">
+			     <source>Ja</source>
+		    </trans-unit>
+			<trans-unit id="no">
+			     <source>Nein</source>
+		    </trans-unit>
+		    		    
+			<trans-unit id="titlesize">
+			     <source>Größe der Überschrift</source>
+		    </trans-unit>		
+			<trans-unit id="size1">
+			     <source>h1</source>
+		    </trans-unit>		
+			<trans-unit id="size2">
+			     <source>h2</source>
+		    </trans-unit>		
+			<trans-unit id="size3">
+			     <source>h3</source>
+		    </trans-unit>		
+			<trans-unit id="size4">
+			     <source>h4</source>
+		    </trans-unit>			    
+		    
+			<trans-unit id="headerimagebg">
+			     <source>Hintergrund-/Überlagungsfarbe</source>
+		    </trans-unit>			    
+			<trans-unit id="headeropacity">
+			     <source>Transparenz (%) der Farbfläche</source>
+		    </trans-unit>		
+			<trans-unit id="imageminheight">
+			     <source>Minimale Höhe des Kopfbildrahmens (200px)</source>
+		    </trans-unit>
+			<trans-unit id="imagemaxheight">
+			     <source>Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</source>
+		    </trans-unit>
+
+			<trans-unit id="imageinf">
+			     <source>Copyright anzeigen</source>
+		    </trans-unit>	
+		</body>
+	</file>
+</xliff>
