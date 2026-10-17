@@ -6,80 +6,62 @@
 			
 			/* -- BACKENDLAYOUTS ------------------------- */
 			<trans-unit id="tab.title">
-			     <source>h_da - Elements</source>
-			     <target state="translated">h_da - Elemente</target>
+			     <source>Elemente</source>
 		    </trans-unit>
 			<trans-unit id="headerimage.title">
-			     <source>Headerimage</source>
-			     <target state="translated">Kopfbild</target>
+			     <source>Kopfbild</source>
 		    </trans-unit>
 			<trans-unit id="headerimage.description">
-			     <source>Big headerimage for the media area</source>
-			     <target state="translated">Großes Kopfbild für Bereich Media</target>
+			     <source>Großes Kopfbild für Bereich Media</source>
 		    </trans-unit>	
 			<trans-unit id="headerimage.header">
-			     <source>Header (not vissible)</source>
-			      <target state="translated">Überschrift, nicht sichtbar</target>
+			      <source>Überschrift, nicht sichtbar</source>
 		    </trans-unit>	    
 			<trans-unit id="headerimage.image">
 			     <source>Headerimage</source>
-			     <target state="translated">Headerimage</target>
 		    </trans-unit>	
 			<trans-unit id="headerimage.flexvalues">
-			     <source>Control</source>
-			      <target state="translated">Einstellungen</target>
+			      <source>Einstellungen</source>
 		    </trans-unit>		
 		    
 		    /* -- DESIGN ------------------------- */
 			<trans-unit id="display">
-			     <source>Headerimage variations</source>
-			     <target state="translated">Anzeigearten</target>
+			     <source>Anzeigearten</source>
 		    </trans-unit>		    
 			<trans-unit id="simple">
-			     <source>Simple Headerimage</source>
-			     <target state="translated">Einfaches Kopfbild</target>
+			     <source>Einfaches Kopfbild</source>
 		    </trans-unit>
 			<trans-unit id="blur">
-			     <source>Headerimage with blur-effect</source>
-			     <target state="translated">Kopfbild mit Weichzeicheneffekt</target>
+			     <source>Kopfbild mit Weichzeicheneffekt</source>
 		    </trans-unit>	    
 			<trans-unit id="color">
-			     <source>Headerimage with background-color</source>
-			     <target state="translated">Kopfbild mit Hintergrundfarbe</target>
+			     <source>Kopfbild mit Hintergrundfarbe</source>
 		    </trans-unit>	     
 			<trans-unit id="wide">
-			     <source>Headerimage no limit</source>
-			     <target state="translated">Breites Kopfbild</target>
+			     <source>Breites Kopfbild</source>
 		    </trans-unit>	
 			<trans-unit id="wideoverlay">
-			     <source>Headerimage no limit, with overlay</source>
-			     <target state="translated">Breites Kopfbild mit transparenter Farbfläche</target>
+			     <source>Breites Kopfbild mit transparenter Farbfläche</source>
 		    </trans-unit>	  	  
 			<trans-unit id="overlay">
-			     <source>Image with an overlay</source>
-			     <target state="translated">Bild mit transparenter Farbfläche</target>
+			     <source>Bild mit transparenter Farbfläche</source>
 		    </trans-unit>	
 			<trans-unit id="text">
-			     <source>with Text</source>
-			     <target state="translated">Mit seitlichem Titel- und Subtiteltext</target>
+			     <source>Mit seitlichem Titel- und Subtiteltext</source>
 		    </trans-unit>	
 		    
 			<trans-unit id="title">
-			     <source>Show the title/subtitle</source>
-			     <target state="translated">Anzeige des Titels/Untertitels</target>
+			     <source>Anzeige des Titels/Untertitels</source>
 		    </trans-unit>	
 			<trans-unit id="yes">
-			     <source>Yes</source>
-			     <target state="translated">Ja</target>
+			     <source>Ja</source>
 		    </trans-unit>
 			<trans-unit id="no">
-			     <source>No</source>
-			     <target state="translated">Nein</target>
+			     <source>Nein</source>
 		    </trans-unit>
 		    		    
 			<trans-unit id="titlesize">
-			     <source>Size of the title</source>
-			     <target state="translated">Größe der Überschrift</target>
+			     <source>Größe der Überschrift</source>
 		    </trans-unit>		
 			<trans-unit id="size1">
 			     <source>h1</source>
@@ -95,24 +77,19 @@
 		    </trans-unit>			    
 		    
 			<trans-unit id="headerimagebg">
-			     <source>Background-color/overlay-color</source>
-			     <target state="translated">Hintergrund-/Überlagungsfarbe</target>
+			     <source>Hintergrund-/Überlagungsfarbe</source>
 		    </trans-unit>			    
 			<trans-unit id="headeropacity">
-			     <source>Transparenz (%) der Farbfläche</source>
 		    </trans-unit>		
 			<trans-unit id="imageminheight">
-			     <source>Min-height of the headerimageframe</source>
-			     <target state="translated">Minimale Höhe des Kopfbildrahmens (200px)</target>
+			     <source>Minimale Höhe des Kopfbildrahmens (200px)</source>
 		    </trans-unit>
 			<trans-unit id="imagemaxheight">
-			     <source>Max-height of the headerimageframe</source>
-			     <target state="translated">Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</target>
+			     <source>Maximale Höhe des Kopfbildrahmens, 0 - Standard, wie Bild, nur für erfahrene User</source>
 		    </trans-unit>
 
 			<trans-unit id="imageinf">
-			     <source>Image-Copyright</source>
-			     <target state="translated">Copyright anzeigen</target>
+			     <source>Copyright anzeigen</source>
 		    </trans-unit>	
 		</body>
 	</file>
