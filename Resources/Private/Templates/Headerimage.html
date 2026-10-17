@@ -3,23 +3,28 @@ xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
 xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
 
 <f:variable name="tx" value="text-{flexFormData.textalign}" />
-<f:variable name="ts" value="{flexFormData.titlesize}" />
 <f:variable name="tc" value="color:{flexFormData.color};" />
 <f:variable name="pd" value="{flexFormData.textpadding}" />
 <f:variable name="bc" value="background-color: {flexFormData.headerimagebg}{flexFormData.headeropacity}{flexFormData.headeropacity};" />
    
+<f:variable name="pb" value="bottom: {site.settings.all.t3upHeaderimage.bottom}%;" />
+<f:variable name="pl" value="left: {site.settings.all.t3upHeaderimage.left}%;" />
+<f:variable name="ts" value="{site.settings.all.t3upHeaderimage.size}" />
+
 <f:switch expression="{flexFormData.display}">
 
+    
     <f:case value="A">
+        
         <div class="container position-relative p-xl-0 t3upheaderimage {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}" >
             <f:for each="{image}" as="image">
                 <f:render section="picture" arguments="{_all}"/>
             </f:for>
 
             <f:if condition="{flexFormData.title}">
-                <div class="headerimagetitle {pd}" style="{bc} {tc}" >
+                <div class="headerimagetitle {pd}" style="{bc} {tc} {pb} {pl}">
                 <div class="container">
-                     <p class="{tx} {ts} m-0" >{data.header}
+                     <p class="{tx} {ts} m-0" style="{tc}"">{data.header}
 	                    <f:if condition="{data.subheader}">
 	                        {data.subheader}<br />
 	                    </f:if>
@@ -153,61 +158,6 @@ xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
              </f:if>
         </div>
   </f:case>
-  
-    <f:case value="G">
-        <div class="headerimageframeBG position-relative">
-            <div class="container p-xl-0 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}"  >
-                <div class="row t3upheaderimage m-0" style="background-color: {flexFormData.headerimagebg};" >
-                    <div class="col-12 col-md-9 p-0" >
-                        <f:for each="{image}" as="image">
-                            <f:render section="picture" arguments="{_all}"/>
-                        </f:for>
-                    </div>
-                    <div class="col-12 col-md-3 p-3 p-md-4 plg-5 cont">
-                        <span class="h3 mb-2" style="{tc}">{data.header}</span>
-                        {f:if(condition: data.subheader, then: '<span class="p" style="{tc}"><br />{data.subheader}</span>')}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </f:case>
-  
-    <f:case value="H">
-        <div class="t3upheaderimage position-relative {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}  headerimagetyle{flexFormData.display}"" >
-            <div class="overlayHeaderImage w-100" style="{bc} z-index:1;"></div>
-                <f:for each="{image}" as="image">
-                    <f:render section="picture" arguments="{_all}"/>
-                </f:for>
-                <f:if condition="{flexFormData.title}">
-                    <div class="headerimagetitle" style="{bc}" >
-                        <div class="container">                        
-                            <p class="{tx} {ts} m-0 ps-3 ps-xxl-0" style="{tc}">{data.header}</p>
-                                <f:if condition="{data.subheader}">
-                                <p class="{tx} {ts} m-0 ps-3 ps-xxl-0" style="{tc}">{data.subheader}</p>
-                            </f:if>
-                        </div>
-                  </div>
-            </f:if>
-        </div>
-  </f:case>
-  
-    <f:case value="I">
-        <div class="t3upheaderimage position-relative w-100  {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')} headerimagetyle{flexFormData.display}" >
-            <f:for each="{image}" as="image">
-                <f:render section="picture" arguments="{_all}"/>
-            </f:for>
-            <f:if condition="{flexFormData.title}">
-                 <div class="container">
-                     <div class="headerimagetitle px-0 d-block w-auto">
-                        <p class="{tx} {ts}  mb-3 d-inline-block {pd}" style="{tc} {bc}">{data.header}</p>
-                        <f:if condition="{data.subheader}">
-                            <p class="{tx} {ts} mb-3 d-block {pd}" style="{tc} {bc}">{data.subheader}</p>
-                        </f:if>
-                    </div>
-                 </div>
-            </f:if>
-        </div>
-  </f:case>
 </f:switch>
 
 <f:section name="picture">
@@ -251,14 +201,6 @@ xmlns:t3up="http://typo3.org/ns/T3up/T3upHeaderimage/ViewHelpers">
                 {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
                 loading="lazy"
                 />
-    
-            <f:if condition="{flexFormData.imageinf}" >
-                <span class="inf symbol">&#xF05a;
-                    <p>copyright:<br />
-                    <f:format.nl2br>{image.properties.copyright}</f:format.nl2br>
-                    </p>
-                </span>
-            </f:if>
         </picture>
     </div>
 </f:section>
