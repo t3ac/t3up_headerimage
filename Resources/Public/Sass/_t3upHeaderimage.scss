@@ -1,4 +1,5 @@
-/** Headerimage *****************************************************************************************************************/    
+@import '../../../../t3up/Resources/Public/Sass/_initalize.scss';
+
 .t3upheaderimage {
     .headerimage {                                      min-height: 30px; position: relative; overflow: hidden;
                                                             
@@ -73,8 +74,8 @@
     }
 
 
-    span.inf                                            {cursor: pointer; position: absolute; top:$v06; left: $v1; color: $white; font-size: 150%;z-index: 11;}
-    span.inf > p                                        {cursor: text; background: rgba($basicColor, .7); font-family: $font; display: none; padding: 5px; font-size: $v1;}
+    span.inf                                            {cursor: pointer; position: absolute; top:$v2; left: $v1; color: $white; font-size: 150%;z-index: 11;}
+    span.inf > p                                        {cursor: text; background: $basicColor; font-family: $font; display: none; padding: 5px; font-size: $v1;}
     span.inf:hover > p                                  {display: block;}
 }
 
