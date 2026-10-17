@@ -1,24 +1,31 @@
-lib.contentElement {
-	templateRootPaths {
-		111 						= EXT:t3up_headerimage/Resources/Private/Templates
-	}
-}
- 
 tt_content {
-	t3upheaderimage_content < lib.contentElement
-	t3upheaderimage_content {
-		templateName = Headerimage
-		dataProcessing {
+    t3upheaderimage_content = FLUIDTEMPLATE
+
+    t3upheaderimage_content {
+        templateName = Headerimage
+
+        templateRootPaths {
+            10 = EXT:t3up/Resources/Private/ContentElements/Templates/
+            20 = EXT:t3up_headerimage/Resources/Private/Templates/
+        }
+
+        partialRootPaths {
+            10 = EXT:t3up/Resources/Private/ContentElements/Partials/
+        }
+
+        layoutRootPaths {
+            10 = EXT:t3up/Resources/Private/ContentElements/Layouts/
+        }
+
+        dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
                 references.fieldName = assets
                 as = image
             }
-		}
-		dataProcessing {
-            999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
-		}
-	}
+            30 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        }
+    }
 }
 
 page.includeCSS{
