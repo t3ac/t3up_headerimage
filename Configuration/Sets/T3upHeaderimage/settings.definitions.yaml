@@ -1,0 +1,26 @@
+categories:
+  t3upHeaderimage:
+    label: 'T3up Headerimage'
+
+settings:
+  t3upHeaderimage.bottom:
+    label: 'Bottom position of the header'
+    category: t3upHeaderimage
+    type: int
+    default: 0
+  t3upHeaderimage.left:
+    label: 'Left position of the header'
+    category: t3upHeaderimage
+    type: int
+    default: 0
+  t3upHeaderimage.size:
+    label: 'Size of the header'
+    category: t3upHeaderimage
+    default: 'h1'
+    type: string
+    enum:
+      0: '0'
+      1: 'h1'      
+      2: 'h2'      
+      3: 'h3'      
+      4: 'h4'      
