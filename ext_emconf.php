@@ -8,7 +8,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'T3UP - Headerimage',
     'description'      => 'Headerimage as a content element',
-    'version'          => '14.0.01',
+    'version'          => '14.0.02',
     'state'            => 'stable',
     'category'         => 'fe',
     'author'           => 'Michael Lang',
